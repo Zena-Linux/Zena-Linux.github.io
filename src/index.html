@@ -1,0 +1,522 @@
+---
+title: Home
+layout: base
+tags: page
+order: 1
+---
+
+<!-- Main Hero Section -->
+<div class="hero bg-base-200 rounded-2xl shadow-2xl m-4">
+  <div class="hero-content flex-col lg:flex-row">
+    <img src="/images/logo.png"
+      class="max-w-sm" alt="Zena OS Logo" />
+    <div class="lg:ml-12">
+      <h1 class="text-6xl font-bold mb-4">
+        <span class="bg-linear-to-r from-primary to-accent bg-clip-text text-transparent">
+          Zena
+        </span>
+      </h1>
+      <p class="py-6 text-2xl leading-relaxed">
+        A modern, immutable operating system that brings the power of containers and reproducible environments to your
+        desktop.
+        Experience a rock‑solid foundation that stays <em class="italic font-semibold">rock-solid</em>, with complete
+        flexibility in your user environment.
+      </p>
+      <div class="flex flex-wrap gap-4 mt-8">
+        <div class="badge badge-primary badge-lg p-4">
+          <i class="bi bi-shield-lock mr-2"></i>
+          Immutable
+        </div>
+        <div class="badge badge-secondary badge-lg p-4">
+          <i class="bi bi-box-seam mr-2"></i>
+          Container-Native
+        </div>
+        <div class="badge badge-accent badge-lg p-4">
+          <i class="bi bi-code-slash mr-2"></i>
+          Built for Developers
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Desktop Preview Section -->
+<div class="p-8 md:p-20">
+  <img src="/images/desktop.png" class="rounded-lg shadow-xl" alt="Zena Desktop Screenshot" />
+</div>
+
+<!-- Niri Feature Section -->
+<div class="hero bg-base-200 rounded-2xl shadow-2xl m-4 mb-12">
+  <div class="hero-content flex-col lg:flex-row">
+    <img src="https://github.com/user-attachments/assets/07d05cd0-d5dc-4a28-9a35-51bae8f119a0" class="max-w-md"
+      alt="Niri Window Manager" />
+    <div class="lg:ml-12">
+      <h2 class="text-4xl font-bold mb-6">
+        <i class="bi bi-columns-gap text-primary mr-3"></i>
+        Work in Columns, Not Chaos
+      </h2>
+      <p class="py-6 text-xl">
+        Zena features <strong class="text-2xl text-primary">niri</strong> - a sleek, column‑based tiling window manager
+        for Wayland.
+        Windows arrange themselves automatically in a flowing layout that maximizes screen space and minimizes clutter.
+        Paired with <strong class="text-2xl text-secondary">Dank Material Shell</strong>, you get dynamic theming,
+        smooth animations,
+        and a desktop that's both beautiful and incredibly efficient.
+      </p>
+      <div class="flex items-center mt-6">
+        <p class="ml-4 text-lg font-semibold">Smart Tiling • Dynamic Themes • Smooth Animations</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Philosophy Section -->
+<div id="philosophy" class="p-8 md:p-12">
+  <div class="text-center mb-12">
+    <h2 class="text-4xl font-bold mb-4">
+      <i class="bi bi-lightbulb text-warning"></i>
+      The Zena Philosophy
+    </h2>
+    <p class="text-2xl text-base-content/70">What ships is stable. What you add is yours.</p>
+  </div>
+
+  <div class="grid md:grid-cols-2 gap-8">
+    <div class="card bg-base-200 shadow-xl">
+      <div class="card-body">
+        <div class="flex items-center mb-4">
+          <div class="badge badge-primary rounded-full w-12 h-12 mr-4">
+            <i class="bi bi-shield-check text-2xl p-2"></i>
+          </div>
+          <h3 class="card-title text-2xl">System</h3>
+        </div>
+        <ul class="space-y-2">
+          <li class="flex items-center">
+            <i class="bi bi-check-circle-fill text-success mr-2"></i>
+            Immutable, locked, reliable
+          </li>
+          <li class="flex items-center">
+            <i class="bi bi-check-circle-fill text-success mr-2"></i>
+            Atomic updates & rollbacks
+          </li>
+          <li class="flex items-center">
+            <i class="bi bi-check-circle-fill text-success mr-2"></i>
+            Rock-solid foundation
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="card bg-base-200 shadow-xl">
+      <div class="card-body">
+        <div class="flex items-center mb-4">
+          <div class="badge badge-secondary rounded-full w-12 h-12 p-3 mr-4">
+            <i class="bi bi-sliders text-2xl"></i>
+          </div>
+          <h3 class="card-title text-2xl">Your Environment</h3>
+        </div>
+        <ul class="space-y-2">
+          <li class="flex items-center">
+            <i class="bi bi-tools text-accent mr-2"></i>
+            Fully customizable with Nix
+          </li>
+          <li class="flex items-center">
+            <i class="bi bi-box text-accent mr-2"></i>
+            Container-native workflows
+          </li>
+          <li class="flex items-center">
+            <i class="bi bi-app text-accent mr-2"></i>
+            Flatpak for GUI applications
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Key Features -->
+<div id="features" class="p-8 md:p-12 bg-base-200 rounded-3xl m-4">
+  <div class="text-center mb-12">
+    <h2 class="text-4xl font-bold mb-4">
+      <i class="bi bi-stars text-primary"></i>
+      Why Zena Works
+    </h2>
+    <p class="text-xl text-base-content/70">Three core principles for a better desktop experience</p>
+  </div>
+
+  <div class="grid md:grid-cols-3 gap-8">
+    <div class="card bg-base-100 shadow-xl">
+      <div class="card-body items-center text-center">
+        <div class="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center mb-4">
+          <i class="bi bi-lightning text-primary text-3xl"></i>
+        </div>
+        <h3 class="card-title text-2xl">Performance First</h3>
+        <p class="text-base-content/70">Powered by CachyOS kernel with LTO optimizations for a snappier experience</p>
+      </div>
+    </div>
+
+    <div class="card bg-base-100 shadow-xl">
+      <div class="card-body items-center text-center">
+        <div class="w-20 h-20 bg-secondary/20 rounded-full flex items-center justify-center mb-4">
+          <i class="bi bi-shield text-secondary text-3xl"></i>
+        </div>
+        <h3 class="card-title text-2xl">Security by Design</h3>
+        <p class="text-base-content/70">Encrypted home directories, atomic updates, and optional Secure Boot</p>
+      </div>
+    </div>
+
+    <div class="card bg-base-100 shadow-xl">
+      <div class="card-body items-center text-center">
+        <div class="w-20 h-20 bg-accent/20 rounded-full flex items-center justify-center mb-4">
+          <i class="bi bi-code-square text-accent text-3xl"></i>
+        </div>
+        <h3 class="card-title text-2xl">Developer Ready</h3>
+        <p class="text-base-content/70">Built-in Nix means any tool you need is just a command away</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Feature Table -->
+  <div class="mt-12 overflow-x-auto">
+    <table class="table table-zebra w-full">
+      <thead>
+        <tr class="text-lg">
+          <th class="bg-base-300">
+            <i class="bi bi-list-check"></i>
+            Feature
+          </th>
+          <th class="bg-base-300">
+            <i class="bi bi-card-text"></i>
+            Description
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="font-bold">Smart Tiling Workspace</td>
+          <td>Niri automatically arranges windows in columns on an infinite strip</td>
+        </tr>
+        <tr>
+          <td class="font-bold">Atomic Updates</td>
+          <td>Update the entire OS as a single image with instant rollbacks</td>
+        </tr>
+        <tr>
+          <td class="font-bold">Portable Encrypted Homes</td>
+          <td>Your home directory is a secure, portable container — take it anywhere</td>
+        </tr>
+        <tr>
+          <td class="font-bold">Nix & Zix</td>
+          <td>Access 120,000+ packages with Nix, use zix for easy management</td>
+        </tr>
+        <tr>
+          <td class="font-bold">Container-Native</td>
+          <td>Podman and Distrobox ready out‑of‑box for safe isolation</td>
+        </tr>
+        <tr>
+          <td class="font-bold">Dynamic Desktop</td>
+          <td>Dank Material Shell brings smooth animations and dynamic theming</td>
+        </tr>
+        <tr>
+          <td class="font-bold">Gaming On Demand</td>
+          <td>One command sets up Steam, Heroic, Lutris, and more</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- Your Tools Section -->
+<div class="p-8 md:p-12">
+  <div class="text-center mb-12">
+    <h2 class="text-4xl font-bold mb-4">
+      <i class="bi bi-tools text-primary"></i>
+      Your Tools, Your Rules
+    </h2>
+    <p class="text-xl text-base-content/70">Zena ships with a minimal base. You add what you need</p>
+    <p class="text-xl text-base-content/70">With Nix built‑in, you have access to over 120,000+ packages instantly — all in your user environment:</p>
+  </div>
+
+  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+    <div class="card bg-base-200 shadow-lg">
+      <div class="card-body items-center">
+        <i class="bi bi-terminal text-4xl text-primary mb-2"></i>
+        <h3 class="card-title">Languages & Runtimes</h3>
+        <p class="text-sm text-center">Python, Node.js, Go, Rust, Java</p>
+      </div>
+    </div>
+
+    <div class="card bg-base-200 shadow-lg">
+      <div class="card-body items-center">
+        <i class="bi bi-code-slash text-4xl text-secondary mb-2"></i>
+        <h3 class="card-title">Development Tools</h3>
+        <p class="text-sm text-center">Neovim, VSCode, JetBrains IDEs</p>
+      </div>
+    </div>
+
+    <div class="card bg-base-200 shadow-lg">
+      <div class="card-body items-center">
+        <i class="bi bi-gear text-4xl text-accent mb-2"></i>
+        <h3 class="card-title">System Utilities</h3>
+        <p class="text-sm text-center">htop, tmux, ripgrep, fzf</p>
+      </div>
+    </div>
+
+    <div class="card bg-base-200 shadow-lg">
+      <div class="card-body items-center">
+        <i class="bi bi-magic text-4xl text-info mb-2"></i>
+        <h3 class="card-title">Simple Management</h3>
+        <p class="text-sm text-center">Use zix: <code>zix add helix fish starship</code></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="mockup-code bg-base-200 max-w-2xl mx-auto">
+    <pre><code><span class="text-info">$</span> zix add neovim nodejs python3</code></pre>
+    <pre><code><span class="text-info">$</span> zix add rust go</code></pre>
+    <pre><code><span class="text-info">$</span> zix add helix fish starship</code></pre>
+  </div>
+</div>
+
+<!-- Get Started Section -->
+<div id="getting-started" class="p-8 md:p-12 bg-base-200 rounded-3xl m-4">
+  <div class="text-center mb-12">
+    <h2 class="text-4xl font-bold mb-4">
+      <i class="bi bi-rocket-takeoff text-primary"></i>
+      Get Started in Minutes
+    </h2>
+  </div>
+
+  <div class="grid md:grid-cols-3 gap-8">
+    <div class="card bg-base-100 shadow-xl">
+      <div class="card-body items-center text-center">
+        <div class="text-6xl font-bold text-primary mb-2">1</div>
+        <h3 class="card-title text-2xl">Download & Install</h3>
+        <p>Grab the latest ISO, flash it, and boot. Guided installer handles everything</p>
+        <div class="card-actions mt-4">
+          <div class="badge badge-outline p-3">
+            <i class="bi bi-download mr-2"></i>
+            ISO Download
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card bg-base-100 shadow-xl">
+      <div class="card-body items-center text-center">
+        <div class="text-6xl font-bold text-secondary mb-2">2</div>
+        <h3 class="card-title text-2xl">First Boot Setup</h3>
+        <p>Simple TUI for account creation, timezone, and home directory setup</p>
+        <div class="card-actions mt-4">
+          <div class="badge badge-outline p-3">
+            <i class="bi bi-keyboard mr-2"></i>
+            TUI Interface
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="card bg-base-100 shadow-xl">
+      <div class="card-body items-center text-center">
+        <div class="text-6xl font-bold text-accent mb-2">3</div>
+        <h3 class="card-title text-2xl">You're In!</h3>
+        <p>Log in to your desktop. Install tools and start working</p>
+        <div class="card-actions mt-4">
+          <div class="badge badge-outline p-3">
+            <i class="bi bi-play-circle mr-2"></i>
+            Start Working
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Gaming Section -->
+<div id="gaming" class="p-8 md:p-12">
+  <div class="hero bg-linear-to-r from-purple-900/30 to-pink-900/30 rounded-3xl">
+    <div class="hero-content flex-col lg:flex-row">
+      <div class="lg:mr-12">
+        <h2 class="text-4xl font-bold mb-6">
+          <i class="bi bi-controller text-purple-400"></i>
+          Gaming? Just Opt‑In.
+        </h2>
+        <p class="text-xl mb-6">
+          Love games? Run one command and we'll set up everything you need:
+        </p>
+        <div class="mockup-code bg-base-200 mb-6">
+          <pre><code><span class="text-info">$</span> gaming install</code></pre>
+        </div>
+        <p class="mb-6">
+          We'll set up a dedicated Gaming Distrobox with Steam, Heroic, Lutris, ProtonUp‑Qt, and everything else you
+          need.
+          Launchers appear right in your app menu — no fuss, all performance.
+        </p>
+        <div class="badge badge-lg badge-primary p-4">
+          <i class="bi bi-lightning-charge"></i>
+          All the games, none of the system clutter.
+        </div>
+      </div>
+      <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?w-600" class="max-w-md rounded-lg shadow-2xl"
+        alt="Gaming on Zena" />
+    </div>
+  </div>
+</div>
+
+<!-- Security & Under the Hood -->
+<div id="security" class="p-8 md:p-12">
+  <div class="grid lg:grid-cols-2 gap-12">
+    <!-- Security -->
+    <div>
+      <h2 class="text-4xl font-bold mb-8">
+        <i class="bi bi-shield-check text-primary"></i>
+        Built to Be Secure
+      </h2>
+      <div class="space-y-4">
+        <div class="flex items-start">
+          <i class="bi bi-check-circle-fill text-success text-xl mt-1 mr-3"></i>
+          <div>
+            <h4 class="font-bold text-lg">Immutable Base</h4>
+            <p class="text-base-content/70">System stays locked and verified</p>
+          </div>
+        </div>
+        <div class="flex items-start">
+          <i class="bi bi-check-circle-fill text-success text-xl mt-1 mr-3"></i>
+          <div>
+            <h4 class="font-bold text-lg">Encrypted LUKS Homes</h4>
+            <p class="text-base-content/70">Default encryption for your data</p>
+          </div>
+        </div>
+        <div class="flex items-start">
+          <i class="bi bi-check-circle-fill text-success text-xl mt-1 mr-3"></i>
+          <div>
+            <h4 class="font-bold text-lg">Secure Boot Support</h4>
+            <p class="text-base-content/70">Enable with a few steps</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Under the Hood -->
+    <div>
+      <h2 class="text-4xl font-bold mb-8">
+        <i class="bi bi-gear text-secondary"></i>
+        What's Under the Hood?
+      </h2>
+      <div class="grid grid-cols-2 gap-4">
+        <div class="card bg-base-200">
+          <div class="card-body p-4">
+            <h3 class="card-title text-sm">Base</h3>
+            <p class="text-xs">Fedora bootc for immutable images</p>
+          </div>
+        </div>
+        <div class="card bg-base-200">
+          <div class="card-body p-4">
+            <h3 class="card-title text-sm">Kernel</h3>
+            <p class="text-xs">CachyOS (LTO optimized)</p>
+          </div>
+        </div>
+        <div class="card bg-base-200">
+          <div class="card-body p-4">
+            <h3 class="card-title text-sm">Desktop</h3>
+            <p class="text-xs">Niri + Dank Material Shell</p>
+          </div>
+        </div>
+        <div class="card bg-base-200">
+          <div class="card-body p-4">
+            <h3 class="card-title text-sm">Containers</h3>
+            <p class="text-xs">Podman + Distrobox</p>
+          </div>
+        </div>
+        <div class="card bg-base-200">
+          <div class="card-body p-4">
+            <h3 class="card-title text-sm">Package Manager</h3>
+            <p class="text-xs">Nix + Zix + Flatpak</p>
+          </div>
+        </div>
+        <div class="card bg-base-200">
+          <div class="card-body p-4">
+            <h3 class="card-title text-sm">Init System</h3>
+            <p class="text-xs">Systemd</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Join the Build -->
+<div id="contribute" class="p-8 md:p-12 text-center">
+  <h2 class="text-4xl font-bold mb-6">
+    <i class="bi bi-github text-base-content"></i>
+    Join the Build
+  </h2>
+  <p class="text-xl mb-8 max-w-2xl mx-auto">
+    Zena is open and built in the open. We welcome ideas, code, and feedback.
+  </p>
+  <div class="flex flex-wrap justify-center gap-6">
+    <a href="https://github.com/Zena-Linux/Zena" class="btn btn-primary btn-lg">
+      <i class="bi bi-github"></i>
+      GitHub Repository
+    </a>
+    <a href="#" class="btn btn-secondary btn-lg">
+      <i class="bi bi-chat-dots"></i>
+      Join Discussion
+    </a>
+    <a href="https://github.com/Zena-Linux/Zena" class="btn btn-accent btn-lg">
+      <i class="bi bi-file-text"></i>
+      View Documentation
+    </a>
+  </div>
+</div>
+
+<!-- Download CTA -->
+<div id="download" class="p-8 md:p-12 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-3xl m-4">
+  <div class="text-center">
+    <h2 class="text-4xl font-bold mb-4">
+      <i class="bi bi-download"></i>
+      Get Zena
+    </h2>
+    <p class="text-2xl mb-8">
+      Ready to try a desktop that stays stable while you customize everything?
+    </p>
+
+    <div class="flex flex-col md:flex-row justify-center gap-6 mb-12">
+      <a href="https://gofile.io/d/zr5q5Q" class="btn btn-primary btn-lg btn-wide">
+        <i class="bi bi-download"></i>
+        Download Latest ISO
+      </a>
+      <a href="#" class="btn btn-outline btn-lg btn-wide">
+        <i class="bi bi-book"></i>
+        View Documentation
+      </a>
+    </div>
+
+    <div class="stats shadow bg-base-100 max-w-2xl mx-auto">
+      <div class="stat">
+        <div class="stat-figure text-primary">
+          <i class="bi bi-box-seam text-3xl"></i>
+        </div>
+        <div class="stat-title">Container-Ready</div>
+        <div class="stat-value">100%</div>
+        <div class="stat-desc">Out of the box</div>
+      </div>
+
+      <div class="stat">
+        <div class="stat-figure text-secondary">
+          <i class="bi bi-bricks text-3xl"></i>
+        </div>
+        <div class="stat-title">Immutable Base</div>
+        <div class="stat-value text-secondary">Atomic</div>
+        <div class="stat-desc">Updates & Rollbacks</div>
+      </div>
+
+      <div class="stat">
+        <div class="stat-figure text-accent">
+          <i class="bi bi-infinity text-3xl"></i>
+        </div>
+        <div class="stat-title">Packages</div>
+        <div class="stat-value text-accent">120k+</div>
+        <div class="stat-desc">Via Nix</div>
+      </div>
+    </div>
+  </div>
+</div>
