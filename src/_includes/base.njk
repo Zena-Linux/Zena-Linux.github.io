@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+
+<head>
+  <link rel="canonical" href="{{ config.url }}{{ page.url }}">
+  <link rel="stylesheet" href="/css/styles.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+  <title>{% if title and title != 'Home' %}{{title}} - {% endif %}{{ config.siteTitle }}</title>
+
+  <meta name="description" content="{% if description %}{{ description }}{% else %}{{ config.description }}{% endif %}">
+  <meta name="keywords" content="{% if keywords %}{{ keywords }}{% else %}{{ config.keywords }}{% endif %}">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Language" content="en">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+
+<body>
+  <header class="navbar bg-base-200 shadow-sm">
+    <div class="navbar-start">
+      <div class="flex items-center px-5">
+        <img src="/images/logo.png" class="w-10 h-10 object-contain" alt="logo">
+        <h2 class="pt-1.5 text-xl font-bold">ENA</h2>
+      </div>
+    </div>
+    <div class="navbar-center">
+    </div>
+    <div class="navbar-end">
+    </div>
+  </header>
+  <div>
+    {{ content | safe }}
+  </div>
+  <footer>
+  </footer>
+</body>
+
+</html>

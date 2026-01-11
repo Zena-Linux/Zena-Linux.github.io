@@ -1,0 +1,33 @@
+{
+  "name": "zerixal.github.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run dev:11ty & npm run dev:css",
+    "dev:11ty": "eleventy --serve --quiet",
+    "dev:css": "tailwindcss -i src/css/styles.css -o public/css/styles.css --watch",
+    "build": "eleventy && tailwindcss -i src/css/styles.css -o public/css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Zerixal/Zerixal.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/Zerixal/Zerixal.github.io/issues"
+  },
+  "homepage": "https://github.com/Zerixal/Zerixal.github.io#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^3.1.2",
+    "@tailwindcss/cli": "^4.1.18",
+    "tailwindcss": "^4.1.18"
+  },
+  "devDependencies": {
+    "@11ty/eleventy-img": "^6.0.4",
+    "daisyui": "^5.5.14"
+  }
+}
