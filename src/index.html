@@ -5,7 +5,7 @@ tags: page
 order: 1
 ---
 
-<!-- Main Hero Section -->
+<!-- Hero Section -->
 <div class="hero bg-base-200 rounded-2xl shadow-2xl">
   <div class="hero-content flex-col lg:flex-row">
     <img src="/images/logo.png" class="max-w-full" alt="Zena OS Logo" />
@@ -21,7 +21,7 @@ order: 1
         Experience a rock‑solid foundation that stays <em class="italic font-semibold">rock-solid</em>, with complete
         flexibility in your user environment.
       </p>
-      <div class="flex flex-wrap gap-4 mt-8">
+      <div class="flex flex-wrap justify-center gap-4 mt-8">
         <div class="badge badge-primary badge-lg p-4">
           <i class="bi bi-shield-lock mr-2"></i>
           Immutable
@@ -45,27 +45,30 @@ order: 1
 </div>
 
 <!-- Niri Feature Section -->
-<div class="hero bg-base-200 rounded-2xl shadow-2xl mb-12">
-  <div class="hero-content flex-col lg:flex-row">
-    <img src="https://github.com/user-attachments/assets/07d05cd0-d5dc-4a28-9a35-51bae8f119a0" class="max-w-full"
-      alt="Niri Window Manager" />
-    <div class="lg:ml-12">
-      <h2 class="text-4xl font-bold mb-6">
-        <i class="bi bi-columns-gap text-primary mr-3"></i>
-        Work in Columns, Not Chaos
-      </h2>
-      <p class="py-6 text-xl">
-        Zena features <strong class="text-2xl text-primary">niri</strong> - a sleek, column‑based tiling window manager
-        for Wayland.
-        Windows arrange themselves automatically in a flowing layout that maximizes screen space and minimizes clutter.
-        Paired with <strong class="text-2xl text-secondary">Dank Material Shell</strong>, you get dynamic theming,
-        smooth animations,
-        and a desktop that's both beautiful and incredibly efficient.
-      </p>
-      <div class="flex items-center mt-6">
-        <p class="ml-4 text-lg font-semibold">Smart Tiling • Dynamic Themes • Smooth Animations</p>
-      </div>
-    </div>
+<div class="bg-base-200 rounded-2xl shadow-2xl mb-12 p-8">
+  <div class="flex-col text-center">
+    <img src="https://github.com/user-attachments/assets/07d05cd0-d5dc-4a28-9a35-51bae8f119a0"
+      class="max-w-48 mx-auto mb-8" alt="Niri Window Manager" />
+
+    <h2 class="text-4xl font-bold mb-6">
+      <i class="bi bi-columns-gap text-primary mr-3"></i>
+      Work in Columns, Not Chaos
+    </h2>
+
+    <p class="text-xl py-4">
+      Zena features
+      <strong class="text-2xl text-primary">niri</strong> — a sleek,
+      column-based tiling window manager for Wayland. Windows arrange
+      themselves automatically in a flowing layout that maximizes screen
+      space and minimizes clutter. Paired with
+      <strong class="text-2xl text-secondary">Dank Material Shell</strong>,
+      you get dynamic theming, smooth animations, and a desktop that’s both
+      beautiful and incredibly efficient.
+    </p>
+
+    <p class="mt-6 text-lg font-semibold">
+      Smart Tiling • Dynamic Themes • Smooth Animations
+    </p>
   </div>
 </div>
 
@@ -133,7 +136,7 @@ order: 1
 </div>
 
 <!-- Key Features -->
-<div id="features" class="p-8 md:p-12 bg-base-200 rounded-3xl m-4">
+<div id="features" class="p-8 md:p-12 bg-base-200 rounded-3xl">
   <div class="text-center mb-12">
     <h2 class="text-4xl font-bold mb-4">
       <i class="bi bi-stars text-primary"></i>
@@ -277,52 +280,50 @@ order: 1
 </div>
 
 <!-- Updates Section -->
-<div id="updates" class="p-8 md:p-12">
-  <div class="hero bg-base-200 rounded-3xl shadow-2xl">
-    <div class="hero-content flex-col lg:flex-row">
-      <div class="lg:mr-12">
-        <h2 class="text-4xl font-bold mb-6">
-          <i class="bi bi-arrow-repeat text-primary mr-2"></i>
-          Always Fresh. Never Fragile.
-        </h2>
+<div class="bg-base-200 rounded-2xl shadow-2xl mb-12 p-8">
+  <div class="flex-col lg:flex-row">
+    <div class="lg:mr-12">
+      <h2 class="text-4xl font-bold mb-6">
+        <i class="bi bi-arrow-repeat text-primary mr-2"></i>
+        Always Fresh. Never Fragile.
+      </h2>
 
-        <p class="text-xl mb-6 leading-relaxed">
-          Zena follows Fedora closely and delivers <strong>daily image-based updates</strong>
-          sometimes multiple times per day without sacrificing stability.
-        </p>
+      <p class="text-xl mb-6 leading-relaxed">
+        Zena follows Fedora closely and delivers <strong>daily image-based updates</strong>
+        sometimes multiple times per day without sacrificing stability.
+      </p>
 
-        <ul class="space-y-4 text-lg">
-          <li class="flex items-start">
-            <i class="bi bi-check-circle-fill text-success text-xl mt-1 mr-3"></i>
-            <span><strong>Atomic updates</strong>: The system updates as a single image</span>
-          </li>
-          <li class="flex items-start">
-            <i class="bi bi-check-circle-fill text-success text-xl mt-1 mr-3"></i>
-            <span><strong>Safe rollbacks</strong>: Boot into a previous version instantly</span>
-          </li>
-          <li class="flex items-start">
-            <i class="bi bi-check-circle-fill text-success text-xl mt-1 mr-3"></i>
-            <span><strong>Daily builds</strong>: Security fixes and improvements land fast</span>
-          </li>
-          <li class="flex items-start">
-            <i class="bi bi-check-circle-fill text-success text-xl mt-1 mr-3"></i>
-            <span>No partial upgrades, no broken states</span>
-          </li>
-        </ul>
+      <ul class="space-y-4 text-lg">
+        <li class="flex items-start">
+          <i class="bi bi-check-circle-fill text-success text-xl mt-1 mr-3"></i>
+          <span><strong>Atomic updates</strong>: The system updates as a single image</span>
+        </li>
+        <li class="flex items-start">
+          <i class="bi bi-check-circle-fill text-success text-xl mt-1 mr-3"></i>
+          <span><strong>Safe rollbacks</strong>: Boot into a previous version instantly</span>
+        </li>
+        <li class="flex items-start">
+          <i class="bi bi-check-circle-fill text-success text-xl mt-1 mr-3"></i>
+          <span><strong>Daily builds</strong>: Security fixes and improvements land fast</span>
+        </li>
+        <li class="flex items-start">
+          <i class="bi bi-check-circle-fill text-success text-xl mt-1 mr-3"></i>
+          <span>No partial upgrades, no broken states</span>
+        </li>
+      </ul>
 
-        <div class="mt-8 flex flex-wrap gap-4">
-          <div class="badge badge-primary badge-lg p-4">
-            <i class="bi bi-lightning-charge mr-2"></i>
-            Fast Updates
-          </div>
-          <div class="badge badge-secondary badge-lg p-4">
-            <i class="bi bi-shield-check mr-2"></i>
-            Rollback Safe
-          </div>
-          <div class="badge badge-accent badge-lg p-4">
-            <i class="bi bi-clock-history mr-2"></i>
-            Daily Builds
-          </div>
+      <div class="mt-8 flex flex-wrap gap-4 justify-center">
+        <div class="badge badge-primary badge-lg p-4">
+          <i class="bi bi-lightning-charge mr-2"></i>
+          Fast Updates
+        </div>
+        <div class="badge badge-secondary badge-lg p-4">
+          <i class="bi bi-shield-check mr-2"></i>
+          Rollback Safe
+        </div>
+        <div class="badge badge-accent badge-lg p-4">
+          <i class="bi bi-clock-history mr-2"></i>
+          Daily Builds
         </div>
       </div>
     </div>
@@ -385,24 +386,25 @@ order: 1
 
 <!-- Gaming Section -->
 <div id="gaming" class="p-8 md:p-12">
-  <div class="hero bg-linear-to-r from-purple-900/30 to-pink-900/30 rounded-3xl">
-    <div class="hero-content flex-col lg:flex-row">
-      <div class="lg:mr-12">
-        <h2 class="text-4xl font-bold mb-6">
-          <i class="bi bi-controller text-purple-400"></i>
-          Gaming? Just Opt‑In.
-        </h2>
-        <p class="text-xl mb-6">
-          Love games? Run one command and we'll set up everything you need:
-        </p>
-        <div class="mockup-code bg-base-200 mb-6">
-          <pre><code><span class="text-info">$</span> gaming install</code></pre>
-        </div>
-        <p class="mb-6">
-          We'll set up a dedicated Gaming Distrobox with Steam, Heroic, Lutris, ProtonUp‑Qt, and everything else you
-          need.
-          Launchers appear right in your app menu — no fuss, all performance.
-        </p>
+  <div class="p-8 bg-linear-to-r from-purple-900/30 to-pink-900/30 rounded-3xl">
+    <div class="flex flex-col cente">
+      <h2 class="text-4xl font-bold mb-6">
+        <i class="bi bi-controller text-purple-400"></i>
+        Gaming? Just Opt‑In.
+      </h2>
+      <p class="text-xl mb-6">
+        Love games? Run one command and we'll set up everything you need:
+      </p>
+
+      <div class="mockup-code bg-base-200 mb-6 max-w-44">
+        <pre><code><span class="text-info">$</span> gaming install</code></pre>
+      </div>
+      <p class="mb-6">
+        We'll set up a dedicated Gaming Distrobox with Steam, Heroic, Lutris, ProtonUp‑Qt, and everything else you
+        need.
+        Launchers appear right in your app menu — no fuss, all performance.
+      </p>
+      <div class="w-full flex justify-center">
         <div class="badge badge-lg badge-primary p-4">
           <i class="bi bi-lightning-charge"></i>
           Native Performance.
@@ -441,6 +443,13 @@ order: 1
           <div>
             <h4 class="font-bold text-lg">Secure Boot Support</h4>
             <p class="text-base-content/70">Enable with a few steps</p>
+          </div>
+        </div>
+        <div class="flex items-start">
+          <i class="bi bi-check-circle-fill text-success text-xl mt-1 mr-3"></i>
+          <div>
+            <h4 class="font-bold text-lg">SELinux Enforcement</h4>
+            <p class="text-base-content/70">Mandatory access controls enabled by default</p>
           </div>
         </div>
       </div>
@@ -541,7 +550,8 @@ order: 1
       </a>
     </div>
 
-    <div class="rounded-2xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 shadow bg-base-100 max-w-3xl mx-auto p-4">
+    <div
+      class="rounded-2xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 shadow bg-base-100 max-w-3xl mx-auto p-4">
       <div class="lg:stat text-center">
         <div class="lg:stat-figure text-primary">
           <i class="bi bi-box-seam text-3xl"></i>
