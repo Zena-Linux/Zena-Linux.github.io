@@ -142,37 +142,52 @@ order: 1
       <i class="bi bi-stars text-primary"></i>
       Why Zena Works
     </h2>
-    <p class="text-xl text-base-content/70">Three core principles for a better desktop experience</p>
+    <p class="text-xl text-base-content/70">Core principles for a better desktop experience</p>
   </div>
 
-  <div class="grid md:grid-cols-3 gap-8">
+  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
     <div class="card bg-base-100 shadow-xl">
       <div class="card-body items-center text-center">
-        <div class="w-20 h-20 bg-primary/20 rounded-full flex items-center justify-center mb-4">
+        <div
+          class="w-20 h-20 bg-linear-to-br from-primary/30 to-primary/10 rounded-full flex items-center justify-center mb-4">
           <i class="bi bi-lightning text-primary text-3xl"></i>
         </div>
-        <h3 class="card-title text-2xl">Performance First</h3>
+        <h3 class="card-title text-2xl mb-2">Performance First</h3>
         <p class="text-base-content/70">Powered by CachyOS kernel with LTO optimizations for a snappier experience</p>
       </div>
     </div>
 
     <div class="card bg-base-100 shadow-xl">
       <div class="card-body items-center text-center">
-        <div class="w-20 h-20 bg-secondary/20 rounded-full flex items-center justify-center mb-4">
+        <div
+          class="w-20 h-20 bg-linear-to-br from-secondary/30 to-secondary/10 rounded-full flex items-center justify-center mb-4">
           <i class="bi bi-shield text-secondary text-3xl"></i>
         </div>
-        <h3 class="card-title text-2xl">Security by Design</h3>
+        <h3 class="card-title text-2xl mb-2">Security by Design</h3>
         <p class="text-base-content/70">Encrypted home directories, atomic updates, and optional Secure Boot</p>
       </div>
     </div>
 
     <div class="card bg-base-100 shadow-xl">
       <div class="card-body items-center text-center">
-        <div class="w-20 h-20 bg-accent/20 rounded-full flex items-center justify-center mb-4">
+        <div
+          class="w-20 h-20 bg-linear-to-br from-accent/30 to-accent/10 rounded-full flex items-center justify-center mb-4">
           <i class="bi bi-code-square text-accent text-3xl"></i>
         </div>
-        <h3 class="card-title text-2xl">Developer Ready</h3>
+        <h3 class="card-title text-2xl mb-2">Developer Ready</h3>
         <p class="text-base-content/70">Built-in Nix means any tool you need is just a command away</p>
+      </div>
+    </div>
+
+    <div class="card bg-base-100 shadow-xl">
+      <div class="card-body items-center text-center">
+        <div
+          class="w-20 h-20 bg-linear-to-br from-info/30 to-info/10 rounded-full flex items-center justify-center mb-4">
+          <i class="bi bi-shield-check text-info text-3xl"></i>
+        </div>
+        <h3 class="card-title text-2xl mb-2">Isolated Environments</h3>
+        <p class="text-base-content/70">Purpose-built isolation: Nix profiles, Flatpak apps, containers, and multi-user
+          separation</p>
       </div>
     </div>
   </div>
@@ -193,6 +208,10 @@ order: 1
         </tr>
       </thead>
       <tbody>
+        <tr>
+          <td class="font-bold">Isolated Environments</td>
+          <td>Per-user isolation: Separate encrypted homes, Nix profiles, and configurations for each account</td>
+        </tr>
         <tr>
           <td class="font-bold">Smart Tiling Workspace</td>
           <td>Niri automatically arranges windows in columns on an infinite strip</td>
@@ -223,6 +242,219 @@ order: 1
         </tr>
       </tbody>
     </table>
+  </div>
+</div>
+
+<!-- Isolated Environments Section -->
+<div id="isolated-environments" class="p-8 md:p-12">
+  <div class="text-center mb-12">
+    <h2 class="text-4xl font-bold mb-4">
+      <i class="bi bi-shield-lock text-primary mr-3"></i>
+      Separate Spaces, Shared System
+    </h2>
+    <p class="text-2xl text-base-content/70 max-w-3xl mx-auto">
+      Complete separation between environments while sharing the same robust foundation.
+    </p>
+  </div>
+
+  <!-- Core Features Grid -->
+  <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
+    <div class="card bg-base-200 shadow-xl">
+      <div class="card-body items-center text-center">
+        <div
+          class="w-20 h-20 bg-linear-to-br from-primary/30 to-primary/10 rounded-full flex items-center justify-center mb-4">
+          <i class="bi bi-lock text-primary text-3xl"></i>
+        </div>
+        <h3 class="card-title text-2xl mb-2 text-primary">Encrypted Home</h3>
+        <p class="text-base-content/70">Each user's home directory is individually encrypted with LUKS</p>
+      </div>
+    </div>
+
+    <div class="card bg-base-200 shadow-xl">
+      <div class="card-body items-center text-center">
+        <div
+          class="w-20 h-20 bg-linear-to-br from-secondary/30 to-secondary/10 rounded-full flex items-center justify-center mb-4">
+          <i class="bi bi-boxes text-secondary text-3xl"></i>
+        </div>
+        <h3 class="card-title text-2xl mb-2 text-secondary">Independent Nix Profiles</h3>
+        <p class="text-base-content/70">Different tools, versions, and configurations per user</p>
+      </div>
+    </div>
+
+    <div class="card bg-base-200 shadow-xl">
+      <div class="card-body items-center text-center">
+        <div
+          class="w-20 h-20 bg-linear-to-br from-accent/30 to-accent/10 rounded-full flex items-center justify-center mb-4">
+          <i class="bi bi-shield text-accent text-3xl"></i>
+        </div>
+        <h3 class="card-title text-2xl mb-2 text-accent">Container Space</h3>
+        <p class="text-base-content/70">Separate Distrobox and Podman environments for each user</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- How It Works -->
+  <div class="bg-base-200 rounded-2xl shadow-2xl mb-12 p-8">
+    <div class="flex-col text-center">
+      <h3 class="text-3xl font-bold mb-6">
+        <i class="bi bi-layers-half text-primary mr-3"></i>
+        How It Works
+      </h3>
+
+      <div class="grid md:grid-cols-2 gap-6 mt-8">
+        <div class="text-left">
+          <ul class="space-y-4">
+            <li class="flex items-start">
+              <div class="shrink-0 w-8 h-8 rounded-full bg-success/20 flex items-center justify-center mt-1 mr-3">
+                <i class="bi bi-check-lg text-success"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-lg">Encrypted User Homes</h4>
+                <p class="text-base-content/70">Each user's home directory is encrypted separately</p>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <div class="shrink-0 w-8 h-8 rounded-full bg-success/20 flex items-center justify-center mt-1 mr-3">
+                <i class="bi bi-check-lg text-success"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-lg">Separate Nix Profiles</h4>
+                <p class="text-base-content/70">Users can install different tools without conflicts</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="text-left">
+          <ul class="space-y-4">
+            <li class="flex items-start">
+              <div class="shrink-0 w-8 h-8 rounded-full bg-success/20 flex items-center justify-center mt-1 mr-3">
+                <i class="bi bi-check-lg text-success"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-lg">Application Sandboxing</h4>
+                <p class="text-base-content/70">Flatpak isolates GUI applications per user</p>
+              </div>
+            </li>
+            <li class="flex items-start">
+              <div class="shrink-0 w-8 h-8 rounded-full bg-success/20 flex items-center justify-center mt-1 mr-3">
+                <i class="bi bi-check-lg text-success"></i>
+              </div>
+              <div>
+                <h4 class="font-bold text-lg">Container Isolation</h4>
+                <p class="text-base-content/70">Distrobox environments are user-specific and isolated</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="mt-8 flex flex-wrap gap-4 justify-center">
+        <div class="badge badge-primary badge-lg p-4">
+          <i class="bi bi-person-check mr-2"></i>
+          Multi-User Ready
+        </div>
+        <div class="badge badge-secondary badge-lg p-4">
+          <i class="bi bi-tools mr-2"></i>
+          No Tool Conflicts
+        </div>
+        <div class="badge badge-accent badge-lg p-4">
+          <i class="bi bi-shield-check mr-2"></i>
+          Enhanced Privacy
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Benefits -->
+  <div class="grid lg:grid-cols-2 gap-8">
+    <div class="bg-base-200 p-8 rounded-2xl shadow-xl">
+      <h3 class="text-3xl font-bold mb-6 text-primary">
+        <i class="bi bi-lightbulb mr-3"></i>
+        Practical Benefits
+      </h3>
+
+      <div class="space-y-6">
+        <div class="flex items-start gap-4">
+          <div class="shrink-0 w-12 h-12 bg-primary/20 rounded-lg flex items-center justify-center">
+            <i class="bi bi-people text-primary text-xl"></i>
+          </div>
+          <div>
+            <h4 class="font-bold text-lg mb-1">Shared Computers</h4>
+            <p class="text-base-content/70">Perfect for family or team computers where each user needs their own setup
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4">
+          <div class="shrink-0 w-12 h-12 bg-secondary/20 rounded-lg flex items-center justify-center">
+            <i class="bi bi-briefcase text-secondary text-xl"></i>
+          </div>
+          <div>
+            <h4 class="font-bold text-lg mb-1">Work-Life Separation</h4>
+            <p class="text-base-content/70">Keep work tools and personal environments completely separate</p>
+          </div>
+        </div>
+
+        <div class="flex items-start gap-4">
+          <div class="shrink-0 w-12 h-12 bg-accent/20 rounded-lg flex items-center justify-center">
+            <i class="bi bi-floppy text-accent text-xl"></i>
+          </div>
+          <div>
+            <h4 class="font-bold text-lg mb-1">Portable Environments</h4>
+            <p class="text-base-content/70">Your encrypted home can be moved to another Systemd based system</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-base-200 p-8 rounded-2xl shadow-xl">
+      <h3 class="text-3xl font-bold mb-6 text-secondary">
+        <i class="bi bi-diagram-3 mr-3"></i>
+        Complete Isolation Stack
+      </h3>
+
+      <div class="space-y-4">
+        <div class="flex items-center justify-between p-3 bg-base-100 rounded-lg">
+          <div class="flex items-center gap-3">
+            <i class="bi bi-house-lock text-primary text-xl"></i>
+            <span class="font-semibold">Home Directory</span>
+          </div>
+          <span class="badge badge-primary">LUKS Encrypted</span>
+        </div>
+
+        <div class="flex items-center justify-between p-3 bg-base-100 rounded-lg">
+          <div class="flex items-center gap-3">
+            <i class="bi bi-box-seam text-secondary text-xl"></i>
+            <span class="font-semibold">Package Management</span>
+          </div>
+          <span class="badge badge-secondary">Per-User Nix Profile</span>
+        </div>
+
+        <div class="flex items-center justify-between p-3 bg-base-100 rounded-lg">
+          <div class="flex items-center gap-3">
+            <i class="bi bi-window-dock text-accent text-xl"></i>
+            <span class="font-semibold">GUI Applications</span>
+          </div>
+          <span class="badge badge-accent">Flatpak Sandboxed</span>
+        </div>
+
+        <div class="flex items-center justify-between p-3 bg-base-100 rounded-lg">
+          <div class="flex items-center gap-3">
+            <i class="bi bi-cpu text-primary text-xl"></i>
+            <span class="font-semibold">Container Workspaces</span>
+          </div>
+          <span class="badge badge-primary">User Distrobox</span>
+        </div>
+      </div>
+
+      <div class="mt-6 p-4 bg-secondary/10 rounded-lg border-l-4 border-secondary">
+        <p class="text-sm text-base-content/90">
+          <i class="bi bi-info-circle text-secondary mr-2"></i>
+          Each layer adds protection and separation, ensuring your tools and data stay isolated from other users.
+        </p>
+      </div>
+    </div>
   </div>
 </div>
 
@@ -565,7 +797,7 @@ order: 1
 </div>
 
 <!-- Download CTA -->
-<div id="download" class="p-8 md:p-12 bg-gradient-to-r from-primary/20 to-secondary/20 rounded-3xl m-4">
+<div id="download" class="p-8 md:p-12 bg-linear-to-r from-primary/20 to-secondary/20 rounded-3xl m-4">
   <div class="text-center">
     <h2 class="text-4xl font-bold mb-4">
       <i class="bi bi-download"></i>
@@ -723,7 +955,7 @@ order: 1
       <a href="https://buymeacoffee.com/jianzcar" target="_blank" rel="noopener"
         class="flex items-center p-3 bg-base-100 rounded-lg hover:bg-base-300 transition-colors">
         <div
-          class="w-10 h-10 rounded-full bg-gradient-to-r from-yellow-500 to-orange-500 flex items-center justify-center mr-3">
+          class="w-10 h-10 rounded-full bg-linear-to-r from-yellow-500 to-orange-500 flex items-center justify-center mr-3">
           <i class="bi bi-cup-hot text-white text-lg"></i>
         </div>
         <div class="flex-1">
