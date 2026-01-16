@@ -387,7 +387,7 @@ order: 1
 <!-- Gaming Section -->
 <div id="gaming" class="p-8 md:p-12">
   <div class="p-8 bg-linear-to-r from-purple-900/30 to-pink-900/30 rounded-3xl">
-    <div class="flex flex-col cente">
+    <div class="flex flex-col">
       <h2 class="text-4xl font-bold mb-6">
         <i class="bi bi-controller text-purple-400"></i>
         Gaming? Just Opt‑In.
@@ -399,15 +399,51 @@ order: 1
       <div class="mockup-code bg-base-200 mb-6 max-w-44">
         <pre><code><span class="text-info">$</span> gaming install</code></pre>
       </div>
-      <p class="mb-6">
-        We'll set up a dedicated Gaming Distrobox with Steam, Heroic, Lutris, ProtonUp‑Qt, and everything else you
-        need.
-        Launchers appear right in your app menu — no fuss, all performance.
+
+      <p class="mb-4">
+        We'll set up a dedicated <strong class="text-primary">Gaming Distrobox based on CachyOS v3</strong> with Steam,
+        Heroic, Lutris, ProtonUp‑Qt, and everything else you need.
       </p>
-      <div class="w-full flex justify-center">
+
+      <div class="mb-6 p-4 bg-purple-900/20 rounded-lg border-l-4 border-purple-500">
+        <h3 class="font-bold text-lg mb-2 text-purple-300">
+          <i class="bi bi-cpu mr-2"></i>
+          Performance at Every Level
+        </h3>
+        <p class="mb-2">
+          Zena gives you gaming optimizations <strong class="text-primary">from the host to the container</strong>:
+        </p>
+        <ul class="list-disc pl-5 space-y-1 text-base-content/90">
+          <li><strong>CachyOS Kernel</strong> on the host — LTO-optimized for maximum performance</li>
+          <li><strong>Extended Scheduler (sched_ext)</strong> at the host level — better CPU allocation</li>
+          <li><strong>CachyOS v3 Gaming Distrobox</strong> — optimized container environment with all gaming tools</li>
+          <li><strong>Latest gaming libraries</strong> — updated graphics drivers and compatibility layers</li>
+          <li><strong>Complete isolation</strong> — gaming setup separated from your main system</li>
+        </ul>
+        <p class="mt-3 text-sm text-purple-200">
+          Unlike setups where only the host or only the container is optimized, Zena delivers performance at every
+          level.
+        </p>
+      </div>
+
+      <p class="mb-6">
+        The gaming environment runs in a CachyOS v3 Distrobox, giving you the latest gaming libraries and tools. All
+        launchers appear right in your app menu — no fuss, all performance. Your games benefit from both host-level
+        kernel optimizations and a containerized, up-to-date gaming environment.
+      </p>
+
+      <div class="w-full flex flex-wrap justify-center gap-4">
         <div class="badge badge-lg badge-primary p-4">
           <i class="bi bi-lightning-charge"></i>
-          Native Performance.
+          Host-Level Optimizations
+        </div>
+        <div class="badge badge-lg badge-secondary p-4">
+          <i class="bi bi-cpu"></i>
+          CachyOS Kernel
+        </div>
+        <div class="badge badge-lg badge-accent p-4">
+          <i class="bi bi-box-seam"></i>
+          CachyOS v3 Container
         </div>
       </div>
     </div>
