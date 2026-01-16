@@ -246,7 +246,7 @@ order: 1
 </div>
 
 <!-- Isolated Environments Section -->
-<div id="isolated-environments" class="p-8 md:p-12">
+<div id="isolated-environments" class="pt-8">
   <div class="text-center mb-12">
     <h2 class="text-4xl font-bold mb-4">
       <i class="bi bi-shield-lock text-primary mr-3"></i>
@@ -415,36 +415,40 @@ order: 1
       </h3>
 
       <div class="space-y-4">
-        <div class="flex items-center justify-between p-3 bg-base-100 rounded-lg">
+        <div
+          class="flex flex-col sm:flex-row sm:items-center justify-between p-3 bg-base-100 rounded-lg gap-2 sm:gap-0">
           <div class="flex items-center gap-3">
             <i class="bi bi-house-lock text-primary text-xl"></i>
             <span class="font-semibold">Home Directory</span>
           </div>
-          <span class="badge badge-primary">LUKS Encrypted</span>
+          <span class="badge badge-primary sm:self-center">LUKS Encrypted</span>
         </div>
 
-        <div class="flex items-center justify-between p-3 bg-base-100 rounded-lg">
+        <div
+          class="flex flex-col sm:flex-row sm:items-center justify-between p-3 bg-base-100 rounded-lg gap-2 sm:gap-0">
           <div class="flex items-center gap-3">
             <i class="bi bi-box-seam text-secondary text-xl"></i>
             <span class="font-semibold">Package Management</span>
           </div>
-          <span class="badge badge-secondary">Per-User Nix Profile</span>
+          <span class="badge badge-secondary sm:self-center whitespace-nowrap">Per-User Nix Profile</span>
         </div>
 
-        <div class="flex items-center justify-between p-3 bg-base-100 rounded-lg">
+        <div
+          class="flex flex-col sm:flex-row sm:items-center justify-between p-3 bg-base-100 rounded-lg gap-2 sm:gap-0">
           <div class="flex items-center gap-3">
             <i class="bi bi-window-dock text-accent text-xl"></i>
             <span class="font-semibold">GUI Applications</span>
           </div>
-          <span class="badge badge-accent">Flatpak Sandboxed</span>
+          <span class="badge badge-accent sm:self-center">Flatpak Sandboxed</span>
         </div>
 
-        <div class="flex items-center justify-between p-3 bg-base-100 rounded-lg">
+        <div
+          class="flex flex-col sm:flex-row sm:items-center justify-between p-3 bg-base-100 rounded-lg gap-2 sm:gap-0">
           <div class="flex items-center gap-3">
             <i class="bi bi-cpu text-primary text-xl"></i>
             <span class="font-semibold">Container Workspaces</span>
           </div>
-          <span class="badge badge-primary">User Distrobox</span>
+          <span class="badge badge-primary sm:self-center">User Distrobox</span>
         </div>
       </div>
 
