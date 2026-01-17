@@ -164,7 +164,7 @@ order: 1
           <i class="bi bi-shield text-secondary text-3xl"></i>
         </div>
         <h3 class="card-title text-2xl mb-2">Security by Design</h3>
-        <p class="text-base-content/70">Encrypted home directories, atomic updates, and optional Secure Boot</p>
+        <p class="text-base-content/70">Encrypted home directories, atomic updates, and Secure Boot support</p>
       </div>
     </div>
 
@@ -427,7 +427,7 @@ order: 1
         <div
           class="flex flex-col sm:flex-row sm:items-center justify-between p-3 bg-base-100 rounded-lg gap-2 sm:gap-0">
           <div class="flex items-center gap-3">
-            <i class="bi bi-box-seam text-secondary text-xl"></i>
+            <i class="bi bi-boxes text-secondary text-xl"></i>
             <span class="font-semibold">Package Management</span>
           </div>
           <span class="badge badge-secondary sm:self-center whitespace-nowrap">Per-User Nix Profile</span>
@@ -445,7 +445,7 @@ order: 1
         <div
           class="flex flex-col sm:flex-row sm:items-center justify-between p-3 bg-base-100 rounded-lg gap-2 sm:gap-0">
           <div class="flex items-center gap-3">
-            <i class="bi bi-cpu text-primary text-xl"></i>
+            <i class="bi bi-box-seam text-primary text-xl"></i>
             <span class="font-semibold">Container Workspaces</span>
           </div>
           <span class="badge badge-primary sm:self-center">User Distrobox</span>
@@ -503,15 +503,18 @@ order: 1
       <div class="card-body items-center">
         <i class="bi bi-magic text-4xl text-info mb-2"></i>
         <h3 class="card-title">Simple Management</h3>
-        <p class="text-sm text-center">Use zix: <code>zix add helix fish starship</code></p>
+        <p class="text-sm text-center">zix is a Nix user package manager supporting imperative commands and a declarative
+          <code>zix.json</code>
+        </p>
       </div>
     </div>
   </div>
 
   <div class="mockup-code bg-base-200 max-w-2xl mx-auto">
     <pre><code><span class="text-info">$</span> zix add neovim nodejs python3</code></pre>
-    <pre><code><span class="text-info">$</span> zix add rust go</code></pre>
-    <pre><code><span class="text-info">$</span> zix add helix fish starship</code></pre>
+    <pre><code><span class="text-info">$</span> zix remove rust go</code></pre>
+    <pre><code><span class="text-info">$</span> zix build && zix apply</code></pre>
+    <pre><code><span class="text-info">$</span> zix rollback</code></pre>
   </div>
 </div>
 
