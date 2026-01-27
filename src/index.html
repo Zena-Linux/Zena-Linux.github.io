@@ -474,7 +474,7 @@ order: 1
       in your user environment:</p>
   </div>
 
-  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
     <div class="card bg-base-200 shadow-lg">
       <div class="card-body items-center">
         <i class="bi bi-terminal text-4xl text-primary mb-2"></i>
@@ -501,23 +501,156 @@ order: 1
 
     <div class="card bg-base-200 shadow-lg">
       <div class="card-body items-center">
-        <i class="bi bi-magic text-4xl text-info mb-2"></i>
-        <h3 class="card-title">Simple Management</h3>
-        <p class="text-sm text-center">zix is a Nix user package manager supporting imperative commands and a declarative
+        <i class="bi bi-boxes text-4xl text-info mb-2"></i>
+        <h3 class="card-title">Package Management</h3>
+        <p class="text-sm text-center">
+          <strong class="text-primary">zix</strong>: Nix user packages with both imperative commands and declarative
           <code>zix.json</code>
         </p>
       </div>
     </div>
   </div>
 
-  <div class="mockup-code bg-base-200 max-w-2xl mx-auto">
-    <pre><code><span class="text-info">$</span> zix add neovim nodejs python3</code></pre>
-    <pre><code><span class="text-info">$</span> zix remove rust go</code></pre>
-    <pre><code><span class="text-info">$</span> zix build && zix apply</code></pre>
-    <pre><code><span class="text-info">$</span> zix rollback</code></pre>
+  <!-- Zix Spotlight Section -->
+  <div class="bg-base-200 rounded-2xl shadow-xl p-8 mb-8">
+    <div class="text-center mb-8">
+      <h3 class="text-3xl font-bold mb-4">
+        <i class="bi bi-boxes text-primary mr-3"></i>
+        Introducing <strong class="text-primary">zix</strong>: Flexible Package Management
+      </h3>
+      <p class="text-xl text-base-content/70">
+        Zix is a Nix user package manager that gives you the best of both worlds:
+        <strong class="text-primary">imperative convenience</strong> for quick changes and
+        <strong class="text-secondary">declarative consistency</strong> for reliable environments.
+      </p>
+      <p class="mt-4 text-base-content/70">
+        <a href="https://github.com/Zena-Linux/zix" class="link link-primary font-semibold">
+          <i class="bi bi-github mr-2"></i>View zix on GitHub
+        </a>
+      </p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8 mb-8">
+      <!-- Imperative Commands -->
+      <div>
+        <h4 class="text-2xl font-bold mb-4 text-primary">
+          <i class="bi bi-terminal mr-2"></i>
+          Imperative Style
+        </h4>
+        <p class="mb-4">Quick, command-line driven package management for rapid changes:</p>
+        <div class="mockup-code bg-base-100">
+          <pre><code><span class="text-info">$</span> zix add neovim nodejs python3</code></pre>
+          <pre><code><span class="text-info">$</span> zix remove rust go</code></pre>
+          <pre><code><span class="text-info">$</span> zix apply</code></pre>
+          <pre><code><span class="text-info">$</span> zix search firefox</code></pre>
+          <pre><code><span class="text-info">$</span> zix rollback</code></pre>
+        </div>
+        <div class="mt-4 p-4 bg-primary/10 rounded-lg">
+          <p class="text-sm"><strong>Perfect for:</strong> Quick experimentation, trying new tools, and on-the-fly
+            adjustments.</p>
+        </div>
+      </div>
+
+      <!-- Declarative Configuration -->
+      <div>
+        <h4 class="text-2xl font-bold mb-4 text-secondary">
+          <i class="bi bi-file-code mr-2"></i>
+          Declarative Style
+        </h4>
+        <p class="mb-4">Define your environment in a <code>zix.json</code> file for reproducibility:</p>
+        <div class="mockup-code bg-base-100">
+          <pre><code><span class="text-comment">// zix.json - Shareable, version-controlled setup</span></code></pre>
+          <pre><code>{</code></pre>
+          <pre><code> "packages": [</code></pre>
+          <pre><code> "neovim",</code></pre>
+          <pre><code> "nodejs",</code></pre>
+          <pre><code> "python3",</code></pre>
+          <pre><code> "ripgrep",</code></pre>
+          <pre><code> "fzf"</code></pre>
+          <pre><code> ]</code></pre>
+          <pre><code>}</code></pre>
+          <pre><code><span class="text-info">$</span> zix apply</code></pre>
+        </div>
+        <div class="mt-4 p-4 bg-secondary/10 rounded-lg">
+          <p class="text-sm"><strong>Perfect for:</strong> Team environments, reproducible setups, and configuration as
+            code.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Profiles Feature -->
+    <div class="bg-base-100 rounded-xl p-6">
+      <h4 class="text-2xl font-bold mb-4 text-accent">
+        <i class="bi bi-layers mr-2"></i>
+        Profiles: Context-Specific Environments
+      </h4>
+      <p class="mb-4">Create isolated environments for different projects or workflows:</p>
+
+      <div class="grid md:grid-cols-3 gap-4 mb-6">
+        <div class="card bg-base-200">
+          <div class="card-body p-4">
+            <h5 class="card-title text-lg">Default Profile</h5>
+            <p class="text-sm">Your everyday tools available system-wide</p>
+          </div>
+        </div>
+        <div class="card bg-base-200">
+          <div class="card-body p-4">
+            <h5 class="card-title text-lg">Project-Specific</h5>
+            <p class="text-sm">Different packages for different projects</p>
+          </div>
+        </div>
+        <div class="card bg-base-200">
+          <div class="card-body p-4">
+            <h5 class="card-title text-lg">Temporary Profiles</h5>
+            <p class="text-sm">Test environments that can be discarded</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mockup-code bg-base-200">
+        <pre><code><span class="text-comment"># Create a new profile for a project</span></code></pre>
+        <pre><code><span class="text-info">$</span> zix profile create web-dev</code></pre>
+        <pre><code><span class="text-comment"># Switch to the web-dev profile</span></code></pre>
+        <pre><code><span class="text-info">$</span> zix profile switch web-dev</code></pre>
+        <pre><code><span class="text-comment"># Add packages to this specific profile</span></code></pre>
+        <pre><code><span class="text-info">$</span> zix add nodejs typescript</code></pre>
+        <pre><code><span class="text-comment"># List all profiles</span></code></pre>
+        <pre><code><span class="text-info">$</span> zix profile list</code></pre>
+      </div>
+
+      <div class="mt-6 flex flex-wrap gap-4 justify-center">
+        <div class="badge badge-primary badge-lg p-3">
+          <i class="bi bi-arrow-left-right"></i>
+          Seamless Switching
+        </div>
+        <div class="badge badge-secondary badge-lg p-3">
+          <i class="bi bi-shield"></i>
+          No Conflicts
+        </div>
+        <div class="badge badge-accent badge-lg p-3">
+          <i class="bi bi-trash"></i>
+          Easy Cleanup
+        </div>
+      </div>
+    </div>
+
+    <!-- Combined Workflow -->
+    <div class="mt-8 text-center">
+      <h4 class="text-2xl font-bold mb-4">
+        <i class="bi bi-arrow-repeat text-primary mr-2"></i>
+        Best of Both Worlds Workflow
+      </h4>
+      <div class="mockup-code bg-base-100 max-w-3xl mx-auto text-left">
+        <pre><code><span class="text-comment"># 1. Start with imperative experimentation</span></code></pre>
+        <pre><code><span class="text-info">$</span> zix add python3 neovim git</code></pre>
+        <pre><code><span class="text-comment"># 2. Edit the config file</span></code></pre>
+        <pre><code><span class="text-info">$</span> nano zix.json</code></pre>
+        <pre><code><span class="text-comment"># 3. Apply declarative changes</span></pre>
+        <pre><code><span class="text-info">$</span> zix apply</code></pre>
+      </div>
+    </div>
   </div>
 </div>
-
 <!-- Updates Section -->
 <div class="bg-base-200 rounded-2xl shadow-2xl mb-12 p-8">
   <div class="flex-col lg:flex-row">
