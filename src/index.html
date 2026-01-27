@@ -510,192 +510,252 @@ order: 1
       </div>
     </div>
   </div>
+</div>
 
-  <!-- Zix Spotlight Section -->
-  <div class="bg-base-200 rounded-2xl shadow-xl p-8 mb-8">
-    <div class="text-center mb-8">
-      <h3 class="text-3xl font-bold mb-4">
-        <i class="bi bi-boxes text-primary mr-3"></i>
-        Introducing <strong class="text-primary">zix</strong>: Flexible Package Management
-      </h3>
-      <p class="text-xl text-base-content/70">
-        Zix is a Nix user package manager that gives you the best of both worlds:
-        <strong class="text-primary">imperative convenience</strong> for quick changes and
-        <strong class="text-secondary">declarative consistency</strong> for reliable environments.
-      </p>
-      <p class="mt-4 text-base-content/70">
-        <a href="https://github.com/Zena-Linux/zix" class="link link-primary font-semibold">
-          <i class="bi bi-github mr-2"></i>View zix on GitHub
-        </a>
-      </p>
-    </div>
+<!-- Zix Spotlight Section -->
+<div class="bg-base-200 rounded-2xl shadow-xl p-4 md:p-8 mb-8">
+  <div class="text-center mb-6 md:mb-8">
+    <h3 class="text-2xl md:text-3xl font-bold mb-4">
+      <i class="bi bi-boxes text-primary mr-2 md:mr-3"></i>
+      Introducing <strong class="text-primary">zix</strong>: Flexible Package Management
+    </h3>
+    <p class="text-lg md:text-xl text-base-content/70">
+      Zix is a Nix user package manager that gives you the best of both worlds:
+      <strong class="text-primary">imperative convenience</strong> for quick changes and
+      <strong class="text-secondary">declarative consistency</strong> for reliable environments.
+    </p>
+    <p class="mt-3 md:mt-4 text-base-content/70">
+      <a href="https://github.com/Zena-Linux/zix" class="link link-primary font-semibold">
+        <i class="bi bi-github mr-1 md:mr-2"></i>View zix on GitHub
+      </a>
+    </p>
+  </div>
 
-    <div class="grid md:grid-cols-2 gap-8 mb-8">
-      <!-- Imperative Commands -->
-      <div>
-        <h4 class="text-2xl font-bold mb-4 text-primary">
-          <i class="bi bi-terminal mr-2"></i>
-          Imperative Style
-        </h4>
-        <p class="mb-4">Quick, command-line driven package management for rapid changes:</p>
-        <div class="mockup-code bg-base-100">
+  <div class="grid md:grid-cols-2 gap-6 md:gap-8 mb-6 md:mb-8">
+    <!-- Imperative Commands -->
+    <div class="w-full">
+      <h4 class="text-xl md:text-2xl font-bold mb-3 md:mb-4 text-primary">
+        <i class="bi bi-terminal mr-2"></i>
+        Imperative Style
+      </h4>
+      <p class="mb-3 md:mb-4 text-sm md:text-base">Quick, command-line driven package management for rapid changes:</p>
+      <div class="overflow-x-auto">
+        <div class="mockup-code bg-base-100 text-xs md:text-sm min-w-0 w-full">
           <pre><code><span class="text-info">$</span> zix add neovim nodejs python3</code></pre>
           <pre><code><span class="text-info">$</span> zix remove rust go</code></pre>
           <pre><code><span class="text-info">$</span> zix apply</code></pre>
           <pre><code><span class="text-info">$</span> zix search firefox</code></pre>
           <pre><code><span class="text-info">$</span> zix rollback</code></pre>
         </div>
-        <div class="mt-4 p-4 bg-primary/10 rounded-lg">
-          <p class="text-sm"><strong>Perfect for:</strong> Quick experimentation, trying new tools, and on-the-fly
-            adjustments.</p>
-        </div>
       </div>
+      <div class="mt-3 md:mt-4 p-3 md:p-4 bg-primary/10 rounded-lg">
+        <p class="text-xs md:text-sm"><strong>Perfect for:</strong> Quick experimentation, trying new tools, and
+          on-the-fly adjustments.</p>
+      </div>
+    </div>
 
-      <!-- Declarative Configuration -->
-      <div>
-        <h4 class="text-2xl font-bold mb-4 text-secondary">
-          <i class="bi bi-file-code mr-2"></i>
-          Declarative Style
-        </h4>
-        <p class="mb-4">Define your environment in a <code>zix.json</code> file for reproducibility:</p>
-        <div class="mockup-code bg-base-100">
-          <pre><code><span class="text-comment">// zix.json - Shareable, version-controlled setup</span></code></pre>
+    <!-- Declarative Configuration -->
+    <div class="w-full">
+      <h4 class="text-xl md:text-2xl font-bold mb-3 md:mb-4 text-secondary">
+        <i class="bi bi-file-code mr-2"></i>
+        Declarative Style
+      </h4>
+      <p class="mb-3 md:mb-4 text-sm md:text-base">Define your environment in a <code>zix.json</code> file for
+        reproducibility:</p>
+      <div class="overflow-x-auto">
+        <div class="mockup-code bg-base-100 text-xs md:text-sm min-w-0 w-full">
+          <pre><code><span class="text-comment">// zix.json - Shareable setup</span></code></pre>
           <pre><code>{</code></pre>
-          <pre><code> "packages": [</code></pre>
-          <pre><code> "neovim",</code></pre>
-          <pre><code> "nodejs",</code></pre>
-          <pre><code> "python3",</code></pre>
-          <pre><code> "ripgrep",</code></pre>
-          <pre><code> "fzf"</code></pre>
+          <pre><code> <span class="text-info">"packages"</span>: [</code></pre>
+          <pre><code> <span class="text-info">"neovim"</span>,</code></pre>
+          <pre><code> <span class="text-info">"nodejs"</span>,</code></pre>
+          <pre><code> <span class="text-info">"python3"</span>,</code></pre>
+          <pre><code> <span class="text-info">"ripgrep"</span>,</code></pre>
+          <pre><code> <span class="text-info">"fzf"</span></code></pre>
           <pre><code> ]</code></pre>
           <pre><code>}</code></pre>
           <pre><code><span class="text-info">$</span> zix apply</code></pre>
         </div>
-        <div class="mt-4 p-4 bg-secondary/10 rounded-lg">
-          <p class="text-sm"><strong>Perfect for:</strong> Team environments, reproducible setups, and configuration as
-            code.</p>
+      </div>
+      <div class="mt-3 md:mt-4 p-3 md:p-4 bg-secondary/10 rounded-lg">
+        <p class="text-xs md:text-sm"><strong>Perfect for:</strong> Team environments, reproducible setups, and
+          configuration as code.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Profiles Feature -->
+  <div class="bg-base-100 rounded-xl p-4 md:p-6">
+    <h4 class="text-xl md:text-2xl font-bold mb-3 md:mb-4 text-accent">
+      <i class="bi bi-layers mr-2"></i>
+      Profiles: Context-Specific Environments
+    </h4>
+    <p class="mb-3 md:mb-4 text-sm md:text-base">Create isolated environments for different projects or workflows:</p>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-4 mb-4 md:mb-6">
+      <div class="card bg-base-200">
+        <div class="card-body p-3 md:p-4">
+          <h5 class="card-title text-base md:text-lg">Default Profile</h5>
+          <p class="text-xs md:text-sm">Your everyday tools available system-wide</p>
+        </div>
+      </div>
+      <div class="card bg-base-200">
+        <div class="card-body p-3 md:p-4">
+          <h5 class="card-title text-base md:text-lg">Project-Specific</h5>
+          <p class="text-xs md:text-sm">Different packages for different projects</p>
+        </div>
+      </div>
+      <div class="card bg-base-200">
+        <div class="card-body p-3 md:p-4">
+          <h5 class="card-title text-base md:text-lg">Temporary Profiles</h5>
+          <p class="text-xs md:text-sm">Test environments that can be discarded</p>
         </div>
       </div>
     </div>
 
-    <!-- Profiles Feature -->
-    <div class="bg-base-100 rounded-xl p-6">
-      <h4 class="text-2xl font-bold mb-4 text-accent">
-        <i class="bi bi-layers mr-2"></i>
-        Profiles: Context-Specific Environments
-      </h4>
-      <p class="mb-4">Create isolated environments for different projects or workflows:</p>
-
-      <div class="grid md:grid-cols-3 gap-4 mb-6">
-        <div class="card bg-base-200">
-          <div class="card-body p-4">
-            <h5 class="card-title text-lg">Default Profile</h5>
-            <p class="text-sm">Your everyday tools available system-wide</p>
-          </div>
-        </div>
-        <div class="card bg-base-200">
-          <div class="card-body p-4">
-            <h5 class="card-title text-lg">Project-Specific</h5>
-            <p class="text-sm">Different packages for different projects</p>
-          </div>
-        </div>
-        <div class="card bg-base-200">
-          <div class="card-body p-4">
-            <h5 class="card-title text-lg">Temporary Profiles</h5>
-            <p class="text-sm">Test environments that can be discarded</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="mockup-code bg-base-200">
+    <div class="overflow-x-auto text-left">
+      <div class="mockup-code bg-base-200 text-xs md:text-sm min-w-0 w-full">
         <pre><code><span class="text-comment"># Create a new profile for a project</span></code></pre>
         <pre><code><span class="text-info">$</span> zix profile create web-dev</code></pre>
         <pre><code><span class="text-comment"># Switch to the web-dev profile</span></code></pre>
         <pre><code><span class="text-info">$</span> zix profile switch web-dev</code></pre>
-        <pre><code><span class="text-comment"># Add packages to this specific profile</span></code></pre>
+        <pre><code><span class="text-comment"># Add packages to this profile</span></code></pre>
         <pre><code><span class="text-info">$</span> zix add nodejs typescript</code></pre>
         <pre><code><span class="text-comment"># List all profiles</span></code></pre>
         <pre><code><span class="text-info">$</span> zix profile list</code></pre>
       </div>
-
-      <div class="mt-6 flex flex-wrap gap-4 justify-center">
-        <div class="badge badge-primary badge-lg p-3">
-          <i class="bi bi-arrow-left-right"></i>
-          Seamless Switching
-        </div>
-        <div class="badge badge-secondary badge-lg p-3">
-          <i class="bi bi-shield"></i>
-          No Conflicts
-        </div>
-        <div class="badge badge-accent badge-lg p-3">
-          <i class="bi bi-trash"></i>
-          Easy Cleanup
-        </div>
-      </div>
     </div>
 
-    <!-- Combined Workflow -->
-    <div class="mt-8 text-center">
-      <h4 class="text-2xl font-bold mb-4">
-        <i class="bi bi-arrow-repeat text-primary mr-2"></i>
-        Best of Both Worlds Workflow
-      </h4>
-      <div class="mockup-code bg-base-100 max-w-3xl mx-auto text-left">
+    <div class="mt-4 md:mt-6 flex flex-wrap gap-2 md:gap-4 justify-center">
+      <div class="badge badge-primary p-2 md:p-3 text-xs md:text-sm">
+        <i class="bi bi-arrow-left-right mr-1"></i>
+        Seamless Switching
+      </div>
+      <div class="badge badge-secondary p-2 md:p-3 text-xs md:text-sm">
+        <i class="bi bi-shield mr-1"></i>
+        No Conflicts
+      </div>
+      <div class="badge badge-accent p-2 md:p-3 text-xs md:text-sm">
+        <i class="bi bi-trash mr-1"></i>
+        Easy Cleanup
+      </div>
+    </div>
+  </div>
+
+  <!-- Combined Workflow -->
+  <div class="mt-6 md:mt-8">
+    <h4 class="text-xl md:text-2xl font-bold mb-3 md:mb-4 text-center">
+      <i class="bi bi-arrow-repeat text-primary mr-2"></i>
+      Best of Both Worlds Workflow
+    </h4>
+    <div class="overflow-x-auto">
+      <div class="mockup-code bg-base-100 text-xs md:text-sm min-w-0 w-full">
         <pre><code><span class="text-comment"># 1. Start with imperative experimentation</span></code></pre>
         <pre><code><span class="text-info">$</span> zix add python3 neovim git</code></pre>
         <pre><code><span class="text-comment"># 2. Edit the config file</span></code></pre>
         <pre><code><span class="text-info">$</span> nano zix.json</code></pre>
-        <pre><code><span class="text-comment"># 3. Apply declarative changes</span></pre>
+        <pre><code><span class="text-comment"># 3. Apply declarative changes</span></code></pre>
         <pre><code><span class="text-info">$</span> zix apply</code></pre>
       </div>
     </div>
   </div>
 </div>
+
 <!-- Updates Section -->
-<div class="bg-base-200 rounded-2xl shadow-2xl mb-12 p-8">
+<div class="bg-base-200 rounded-2xl shadow-2xl mb-12 p-4 md:p-8">
   <div class="flex-col lg:flex-row">
     <div class="lg:mr-12">
-      <h2 class="text-4xl font-bold mb-6">
+      <h2 class="text-3xl md:text-4xl font-bold mb-4 md:mb-6">
         <i class="bi bi-arrow-repeat text-primary mr-2"></i>
         Always Fresh. Never Fragile.
       </h2>
 
-      <p class="text-xl mb-6 leading-relaxed">
-        Zena follows Fedora closely and delivers <strong>daily image-based updates</strong>
-        sometimes multiple times per day without sacrificing stability.
+      <p class="text-lg md:text-xl mb-4 md:mb-6 leading-relaxed">
+        Zena delivers <strong>daily image-based updates</strong> while respecting your workflow.
+        The immutable design means you can update with confidence that your current version stays rock-solid until you're
+        ready to move forward.
       </p>
 
-      <ul class="space-y-4 text-lg">
-        <li class="flex items-start">
-          <i class="bi bi-check-circle-fill text-success text-xl mt-1 mr-3"></i>
-          <span><strong>Atomic updates</strong>: The system updates as a single image</span>
-        </li>
-        <li class="flex items-start">
-          <i class="bi bi-check-circle-fill text-success text-xl mt-1 mr-3"></i>
-          <span><strong>Safe rollbacks</strong>: Boot into a previous version instantly</span>
-        </li>
-        <li class="flex items-start">
-          <i class="bi bi-check-circle-fill text-success text-xl mt-1 mr-3"></i>
-          <span><strong>Daily builds</strong>: Security fixes and improvements land fast</span>
-        </li>
-        <li class="flex items-start">
-          <i class="bi bi-check-circle-fill text-success text-xl mt-1 mr-3"></i>
-          <span>No partial upgrades, no broken states</span>
-        </li>
-      </ul>
+      <div class="grid md:grid-cols-2 gap-6 md:gap-8 mb-6 md:mb-8">
+        <div class="space-y-3 md:space-y-4">
+          <h3 class="text-xl md:text-2xl font-bold text-primary flex items-center gap-2">
+            <i class="bi bi-person-check"></i>
+            Update on Your Terms
+          </h3>
+          <ul class="space-y-2 md:space-y-3">
+            <li class="flex items-start gap-2 md:gap-3">
+              <i class="bi bi-arrow-clockwise text-primary text-lg md:text-xl mt-0.5 flex-shrink-0"></i>
+              <span><strong>Daily updates available</strong> but never forced</span>
+            </li>
+            <li class="flex items-start gap-2 md:gap-3">
+              <i class="bi bi-wifi-off text-primary text-lg md:text-xl mt-0.5 flex-shrink-0"></i>
+              <span><strong>Work offline confidently</strong> without updates</span>
+            </li>
+            <li class="flex items-start gap-2 md:gap-3">
+              <i class="bi bi-infinity text-primary text-lg md:text-xl mt-0.5 flex-shrink-0"></i>
+              <span><strong>Stay on any version</strong> as long as you want</span>
+            </li>
+          </ul>
+        </div>
 
-      <div class="mt-8 flex flex-wrap gap-4 justify-center">
-        <div class="badge badge-primary badge-lg p-4">
-          <i class="bi bi-lightning-charge mr-2"></i>
-          Fast Updates
+        <div class="space-y-3 md:space-y-4">
+          <h3 class="text-xl md:text-2xl font-bold text-secondary flex items-center gap-2">
+            <i class="bi bi-shield-lock"></i>
+            Zero-Risk Updates
+          </h3>
+          <ul class="space-y-2 md:space-y-3">
+            <li class="flex items-start gap-2 md:gap-3">
+              <i class="bi bi-box text-secondary text-lg md:text-xl mt-0.5 flex-shrink-0"></i>
+              <span><strong>Atomic updates</strong>: Entire system as one unit</span>
+            </li>
+            <li class="flex items-start gap-2 md:gap-3">
+              <i class="bi bi-arrow-counterclockwise text-secondary text-lg md:text-xl mt-0.5 flex-shrink-0"></i>
+              <span><strong>Instant rollbacks</strong> at boot time</span>
+            </li>
+            <li class="flex items-start gap-2 md:gap-3">
+              <i class="bi bi-check-circle text-secondary text-lg md:text-xl mt-0.5 flex-shrink-0"></i>
+              <span><strong>No broken states</strong> - all or nothing</span>
+            </li>
+          </ul>
         </div>
-        <div class="badge badge-secondary badge-lg p-4">
-          <i class="bi bi-shield-check mr-2"></i>
-          Rollback Safe
+      </div>
+
+      <!-- The Immutable Advantage -->
+      <div class="bg-base-100 rounded-xl p-4 md:p-6 mb-6 md:mb-8">
+        <div class="flex items-center gap-3 mb-3 md:mb-4">
+          <i class="bi bi-rocket-takeoff text-accent text-xl md:text-2xl"></i>
+          <h3 class="text-xl md:text-2xl font-bold text-accent">
+            Update with Confidence
+          </h3>
         </div>
-        <div class="badge badge-accent badge-lg p-4">
-          <i class="bi bi-clock-history mr-2"></i>
-          Daily Builds
+        <p class="text-base md:text-lg mb-3 md:mb-4">
+          Because Zena is immutable, your current version remains <strong>completely stable</strong> regardless of how
+          long you use it.
+          Whether you update daily or stay on a version for weeks, you're always on a rock-solid foundation.
+        </p>
+        <div class="flex items-start p-3 md:p-4 bg-primary/10 rounded-lg">
+          <i class="bi bi-lightbulb text-primary text-lg md:text-xl mt-0.5 mr-2 md:mr-3 flex-shrink-0"></i>
+          <div>
+            <h4 class="font-bold text-base md:text-lg">No Pressure to Update</h4>
+            <p class="text-base-content/70 text-sm md:text-base">Unlike traditional systems that degrade over time,
+              Zena's immutable design
+              means every version is as stable as the day it was installed.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="mt-6 md:mt-8 flex flex-wrap gap-2 md:gap-4 justify-center">
+        <div class="badge badge-primary p-2 md:p-4 flex items-center gap-1 md:gap-2 text-xs md:text-sm">
+          <i class="bi bi-person-check"></i>
+          Your Schedule
+        </div>
+        <div class="badge badge-secondary p-2 md:p-4 flex items-center gap-1 md:gap-2 text-xs md:text-sm">
+          <i class="bi bi-arrow-counterclockwise"></i>
+          Instant Rollbacks
+        </div>
+        <div class="badge badge-accent p-2 md:p-4 flex items-center gap-1 md:gap-2 text-xs md:text-sm">
+          <i class="bi bi-rocket"></i>
+          Update with Confidence
         </div>
       </div>
     </div>
