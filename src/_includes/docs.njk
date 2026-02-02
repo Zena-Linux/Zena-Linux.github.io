@@ -1,0 +1,23 @@
+---
+layout: base.njk
+---
+<div class="drawer lg:drawer-open flex-1 overflow-auto">
+  <input id="drawer-1" type="checkbox" class="drawer-toggle" />
+  <div class="drawer-content flex flex-col overflow-auto">
+    <div class="px-15 py-5">
+      {{ content | safe }}
+    </div>
+    <div class="absolute top-5 -left-1">
+      <label for="drawer-1" class="btn drawer-button lg:hidden">
+        <i class="bi bi-chevron-right"></i>
+      </label>
+    </div>
+  </div>
+  <div class="drawer-side h-full w-full">
+    <label for="drawer-1" aria-label="close sidebar" class="drawer-overlay"></label>
+    <ul class="menu bg-base-200 min-h-full p-4">
+      <li><a>Sidebar Item 1</a></li>
+      <li><a>Sidebar Item 2</a></li>
+    </ul>
+  </div>
+</div>

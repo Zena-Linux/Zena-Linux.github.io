@@ -17,16 +17,19 @@
   <link rel="shortcut icon" href="/images/logo.png" type="image">
 </head>
 
-<body>
-  <header class="navbar bg-base-200 shadow-sm">
-    <div class="navbar-start">
-      <div class="flex items-center px-5">
+<body class="h-screen overflow-hidden flex flex-col">
+  <header class="navbar bg-base-200 shadow-md">
+    <div class="navbar-start px-5 gap-5">
+      <a href="/">
         <img src="/images/logo.png" class="w-10 h-10 object-contain" alt="logo">
-      </div>
+      </a>
     </div>
     <div class="navbar-center">
     </div>
     <div class="navbar-end px-5 gap-5">
+      <a href="/docs" class="flex items-center space-x-1 text-lg font-medium">
+        <i class="bi bi-book text-2xl"></i>
+      </a>
       <a href="https://discord.gg/22MFgGgjG9" target="_blank" rel="noopener noreferrer">
         <i class="bi bi-discord text-2xl"></i>
       </a>
@@ -36,9 +39,7 @@
       </a>
     </div>
   </header>
-  <div class="p-5">
-    {{ content | safe }}
-  </div>
+  {{ content | safe }}
   <footer>
   </footer>
 </body>
