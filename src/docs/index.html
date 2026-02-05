@@ -1,0 +1,106 @@
+---
+title: Introduction
+layout: docs
+tags: docs
+order: 1
+---
+<h1 class="text-3xl font-semibold mb-6 text-primary">Introduction to Zena</h1>
+<p class="mb-4"> Zena Linux is a modern, immutable desktop operating system founded and actively developed by Jian Zcar.
+  It is engineered from the ground up to provide a rock-solid, container-native foundation while paradoxically
+  delivering maximum flexibility and control within the user's personal environment. The project was born from a desire
+  to create a relatively light, efficient, and reliable bootable image that offers a powerful desktop experience without
+  unnecessary complexity or bloat. </p>
+
+<h2 class="text-2xl font-semibold mt-8 mb-4 text-secondary">Philosophy and Evolution</h2>
+<p class="mb-4"> Early in its development, Zena drew significant inspiration from projects like Bazzite. Initially built
+  around the GNOME desktop for its simplicity, the system evolved by integrating coveted features and ideas from several
+  pioneering distributions, including the performance-focused CachyOS, the declarative power of NixOS, and the robust
+  foundations of Fedora. This synthesis shaped Zena into a uniquely flexible and practical system that emphasizes
+  performance, clarity of design, and user empowerment. </p>
+<p class="mb-4"> The core philosophy of Zena is "pragmatically immutable." The base operating system is locked down and
+  updated atomically as a single image, guaranteeing stability and reproducibility. However, this immutability is not a
+  cage. Through a carefully curated stack of technologies, users are granted expansive freedom to install software,
+  customize their environment, and create reproducible workspaces, ensuring the system adapts to the user's needs, not
+  the other way around. </p>
+
+<h2 class="text-2xl font-semibold mt-8 mb-4 text-secondary">Core Technology Stack</h2>
+<p class="mb-4">
+  As a bootable image, Zena integrates a deliberate stack of technologies that leverage and extend its Fedora base:
+</p>
+<p class="mb-4">
+  <strong>Foundation & Kernel:</strong> Its core is the immutable Fedora base managed by <code>bootc</code>, enabling
+  atomic, image-based updates and rollbacks. For enhanced desktop performance, this base is paired with the CachyOS
+  kernel, optimized with LTO (Link Time Optimization) and the BORE scheduler for maximum responsiveness.
+</p>
+<p class="mb-4">
+  <strong>Desktop & Packages:</strong> The user experience is delivered by Niri, a sleek, column-based tiling window
+  manager for Wayland, composed with the Dank Material Shell for a dynamic and themable workflow. User-space software
+  management is revolutionized through Nix, providing declarative access to over 120,000 packages, assisted by the
+  custom <code>zix</code> helper which offers both imperative commands and declarative configuration via a
+  <code>zix.json</code> file for simplified and reproducible operations.
+</p>
+<p class="mb-4">
+  <strong>Containers & Security:</strong> The container-native design is first-class, with Podman and Distrobox
+  available out-of-the-box. Security is inherent in the immutable design, enforced by SELinux, and extends to user data
+  with optional, integrated home directory encryption via <code>systemd-homed</code> and LUKS, creating portable,
+  encrypted user homes.
+</p>
+
+<h2 class="text-2xl font-semibold mt-8 mb-4 text-secondary">Extending Functionality with Distrobox</h2>
+<p class="mb-4">
+  A key feature of Zena's practical design is its use of Distrobox to extend core functionality in a modular, isolated
+  way. This approach allows users to add complex software suites without compromising the stability of the immutable
+  base image.
+</p>
+<p class="mb-4">
+  For gaming, Zena provides a simple command, <code>gaming install</code>, which automatically creates a dedicated
+  Distrobox container based on CachyOS v3. This container comes pre-configured with major gaming launchers and tools
+  like Steam, Heroic, Lutris, and ProtonUp‑Qt. All applications from this container integrate seamlessly with the host
+  desktop's app menu. This setup delivers performance at every level: from the LTO-optimized CachyOS kernel on the host
+  to the updated libraries within the gaming-specific container.
+</p>
+<p class="mb-4">
+  Similarly, virtualization and other specialized workflows can be enabled through purpose-built Distrobox containers.
+  This methodology ensures that such environments are neatly isolated, user-specific, and can be maintained or discarded
+  without affecting the core system, perfectly embodying the principle of keeping the system solid while the user's
+  environment remains flexible.
+</p>
+
+<h2 class="text-2xl font-semibold mt-8 mb-4 text-secondary">Multi-User Isolation & Security</h2>
+<p class="mb-4">
+  Zena is designed for complete separation between users while sharing the same robust foundation. This makes it
+  ideal for shared computers, family PCs, or maintaining separate work and personal environments on the same machine.
+</p>
+<p class="mb-4">
+  Each user benefits from a comprehensive isolation stack:
+</p>
+<p class="mb-4">
+  <strong>Encrypted Home:</strong> Individual LUKS-encrypted home directories for enhanced privacy.
+</p>
+<p class="mb-4">
+  <strong>Independent Nix Profiles:</strong> Separate sets of tools, versions, and configurations per user to prevent
+  conflicts.
+</p>
+<p class="mb-4">
+  <strong>Container Space:</strong> User-specific Distrobox and Podman environments.
+</p>
+<p class="mb-4">
+  <strong>Application Sandboxing:</strong> GUI applications via Flatpak are isolated per user.
+</p>
+<p class="mb-4">
+  This layered approach ensures that tools, data, and environments remain protected and separate, providing
+  enterprise-grade multi-user support on a personal desktop system.
+</p>
+
+<h2 class="text-2xl font-semibold mt-8 mb-4 text-secondary">Target Experience</h2>
+<p class="mb-4">
+  Zena is not designed to be the most minimal system. It is a "complete" image that focuses on providing a robust,
+  ready-to-use desktop foundation by default. It strips away unnecessary redundancy but comes pre-equipped with
+  essential, powerful tools for modern computing. It is ideally suited for developers, gamers, privacy-conscious users,
+  and anyone who values a system with minimal maintenance, rock-solid stability, and effortless reproducibility.
+</p>
+<p class="mb-4">
+  The project is openly developed by Jian Zcar, with its image definitions, documentation, and builds available on
+  GitHub. It represents an approach to the Linux desktop that values clarity, performance, and the principled separation
+  of the immutable system from the mutable, user-controlled workspace.
+</p>
