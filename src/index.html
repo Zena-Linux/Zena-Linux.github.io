@@ -46,24 +46,37 @@ order: 1
 
 <!-- Niri Feature Section -->
 <div class="bg-base-200 rounded-2xl shadow-2xl mb-12 p-8">
-  <div class="flex-col text-center">
-    <img src="https://github.com/user-attachments/assets/07d05cd0-d5dc-4a28-9a35-51bae8f119a0"
-      class="max-w-48 mx-auto mb-8" alt="Niri Window Manager" />
+  <div class="flex flex-col text-center">
+    <div class="flex mb-8 justify-center gap-4">
+      <img src="https://github.com/user-attachments/assets/07d05cd0-d5dc-4a28-9a35-51bae8f119a0"
+        class="max-w-48" alt="niri logo" />
+      <img src="https://raw.githubusercontent.com/DreamMaoMao/mangowc/refs/heads/main/assets/mango-transparency-256.png"
+        class="max-w-48" alt="MangoWC logo" />
+    </div>
 
     <h2 class="text-4xl font-bold mb-6">
       <i class="bi bi-columns-gap text-primary mr-3"></i>
-      Work in Columns, Not Chaos
+      Work in Tiles, Not Chaos
     </h2>
 
     <p class="text-xl py-4">
-      Zena features
-      <strong class="text-2xl text-primary">niri</strong> — a sleek,
-      column-based tiling window manager for Wayland. Windows arrange
-      themselves automatically in a flowing layout that maximizes screen
-      space and minimizes clutter. Paired with
-      <strong class="text-2xl text-secondary">Dank Material Shell</strong>,
-      you get dynamic theming, smooth animations, and a desktop that’s both
-      beautiful and incredibly efficient.
+      Zena features two
+      <span class="font-bold">powerful Wayland compositors</span> —
+      <strong class="text-2xl text-primary">niri</strong> and
+      <strong class="text-2xl text-secondary">MangoWC</strong> — giving you
+      flexible, modern workflows on Wayland.
+      <strong class="text-2xl text-primary">Niri</strong> brings a unique
+      <span class="font-semibold">scrollable tiling experience</span>,
+      where windows are arranged in a horizontal, infinitely scrollable layout
+      to keep focus and flow without resizing existing windows.
+      Meanwhile, <strong class="text-2xl text-secondary">MangoWC</strong>
+      offers a lightweight,
+      <span class="font-semibold">feature-rich compositor</span> built on dwl
+      that delivers excellent XWayland support, smooth animations, tag-based
+      layouts, and rich window states for maximum flexibility and performance.
+      Paired with <strong class="text-2xl text-accent">Dank Material Shell</strong>,
+      you get dynamic theming, smooth animations, and a desktop that’s
+      both beautiful and incredibly efficient.
     </p>
 
     <p class="mt-6 text-lg font-semibold">
@@ -672,7 +685,8 @@ order: 1
 
       <p class="text-lg md:text-xl mb-4 md:mb-6 leading-relaxed">
         Zena delivers <strong>daily image-based updates</strong> while respecting your workflow.
-        The immutable design means you can update with confidence that your current version stays rock-solid until you're
+        The immutable design means you can update with confidence that your current version stays rock-solid until
+        you're
         ready to move forward.
       </p>
 
@@ -684,15 +698,15 @@ order: 1
           </h3>
           <ul class="space-y-2 md:space-y-3">
             <li class="flex items-start gap-2 md:gap-3">
-              <i class="bi bi-arrow-clockwise text-primary text-lg md:text-xl mt-0.5 flex-shrink-0"></i>
+              <i class="bi bi-arrow-clockwise text-primary text-lg md:text-xl mt-0.5 shrink-0"></i>
               <span><strong>Daily updates available</strong> but never forced</span>
             </li>
             <li class="flex items-start gap-2 md:gap-3">
-              <i class="bi bi-wifi-off text-primary text-lg md:text-xl mt-0.5 flex-shrink-0"></i>
+              <i class="bi bi-wifi-off text-primary text-lg md:text-xl mt-0.5 shrink-0"></i>
               <span><strong>Work offline confidently</strong> without updates</span>
             </li>
             <li class="flex items-start gap-2 md:gap-3">
-              <i class="bi bi-infinity text-primary text-lg md:text-xl mt-0.5 flex-shrink-0"></i>
+              <i class="bi bi-infinity text-primary text-lg md:text-xl mt-0.5 shrink-0"></i>
               <span><strong>Stay on any version</strong> as long as you want</span>
             </li>
           </ul>
@@ -705,15 +719,15 @@ order: 1
           </h3>
           <ul class="space-y-2 md:space-y-3">
             <li class="flex items-start gap-2 md:gap-3">
-              <i class="bi bi-box text-secondary text-lg md:text-xl mt-0.5 flex-shrink-0"></i>
+              <i class="bi bi-box text-secondary text-lg md:text-xl mt-0.5 shrink-0"></i>
               <span><strong>Atomic updates</strong>: Entire system as one unit</span>
             </li>
             <li class="flex items-start gap-2 md:gap-3">
-              <i class="bi bi-arrow-counterclockwise text-secondary text-lg md:text-xl mt-0.5 flex-shrink-0"></i>
+              <i class="bi bi-arrow-counterclockwise text-secondary text-lg md:text-xl mt-0.5 shrink-0"></i>
               <span><strong>Instant rollbacks</strong> at boot time</span>
             </li>
             <li class="flex items-start gap-2 md:gap-3">
-              <i class="bi bi-check-circle text-secondary text-lg md:text-xl mt-0.5 flex-shrink-0"></i>
+              <i class="bi bi-check-circle text-secondary text-lg md:text-xl mt-0.5 shrink-0"></i>
               <span><strong>No broken states</strong> - all or nothing</span>
             </li>
           </ul>
@@ -790,11 +804,11 @@ order: 1
       <div class="card-body items-center text-center">
         <div class="text-6xl font-bold text-secondary mb-2">2</div>
         <h3 class="card-title text-2xl">First Boot Setup</h3>
-        <p>Simple TUI for account creation, timezone, and home directory setup</p>
+        <p>GUI for account creation, timezone, keymap and locale</p>
         <div class="card-actions mt-4">
           <div class="badge badge-outline p-3">
-            <i class="bi bi-keyboard mr-2"></i>
-            TUI Interface
+            <i class="bi bi-ui-radios mr-2"></i>
+            GUI Setup
           </div>
         </div>
       </div>
@@ -1178,7 +1192,8 @@ order: 1
   <p class="text-lg mb-4 flex items-center justify-center">
     Made with <i class="bi bi-heart-fill text-error mx-1"></i> by
     <a href="https://github.com/JianZcar" target="_blank" rel="noopener" class="link link-hover flex items-center">
-      <img src="https://github.com/JianZcar.png" alt="JianZcar's GitHub Profile Picture" class="rounded-full w-16 h-16 mx-3 shadow-2xl transition-transform hover:scale-125" />
+      <img src="https://github.com/JianZcar.png" alt="JianZcar's GitHub Profile Picture"
+        class="rounded-full w-16 h-16 mx-3 shadow-2xl transition-transform hover:scale-125" />
       JianZcar
     </a>
   </p>
