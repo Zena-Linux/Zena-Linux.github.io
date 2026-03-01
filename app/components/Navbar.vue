@@ -2,7 +2,7 @@
   <div class="navbar bg-base-200 shrink-0">
     <div class="navbar-start px-2">
       <NuxtLink to="/" class="hover:motion-preset-pulse-sm">
-        <img src="/favicon.ico" alt="Zena Logo" class="w-8 h-8"/>
+        <img src="/images/logo.png" alt="Zena Logo" class="w-8 h-8"/>
       </NuxtLink>
     </div>
     <div class="navbar-center">
@@ -19,10 +19,10 @@
       </ul>
     </div>
     <div class="navbar-end gap-2 px-2">
-      <a href="https://discord.gg/22MFgGgjG9" target="_blank" rel="noopener" class="btn btn-ghost btn-circle shadow-sm hover:scale-105 transition-transform">
+      <a href="https://discord.gg/22MFgGgjG9" target="_blank" rel="noopener" class="hover:scale-105 transition-transform">
         <Icon name="ic:baseline-discord" class="text-2xl" />
       </a>
-      <a href="https://github.com/Zena-Linux/" target="_blank" rel="noopener" class="btn btn-ghost btn-circle shadow-sm hover:scale-105 transition-transform">
+      <a href="https://github.com/Zena-Linux/" target="_blank" rel="noopener" class="hover:scale-105 transition-transform">
         <Icon name="mdi:github" class="text-2xl" />
       </a>
     </div>
