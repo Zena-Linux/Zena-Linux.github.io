@@ -114,7 +114,7 @@
 
       <div class="grid lg:grid-cols-2 gap-8">
         <Card>
-          <div class="p-8">
+          <div>
             <h3 class="text-3xl font-bold mb-6 text-primary">
               <Icon name="lucide:lightbulb" class="mr-3" />
               Practical Benefits
@@ -156,7 +156,7 @@
         </Card>
 
         <Card>
-          <div class="p-8">
+          <div>
             <h3 class="text-3xl font-bold mb-6 text-secondary">
               <Icon name="lucide:network" class="mr-3" />
               Complete Isolation Stack
