@@ -55,10 +55,7 @@
           <Icon name="lucide:archive" class="text-xs" /> Flatpak
         </div>
         <div class="flex items-center gap-1 hover:text-primary transition-colors cursor-default">
-          <Icon name="lucide:monitor" class="text-xs" /> GNOME
-        </div>
-        <div class="flex items-center gap-1 hover:text-primary transition-colors cursor-default">
-          <Icon name="lucide:code" class="text-xs" /> Material Shell
+          <Icon name="lucide:monitor" class="text-xs" /> Dank Material Shell
         </div>
       </div>
       <p class="mt-8 text-lg italic text-base-content/80">
