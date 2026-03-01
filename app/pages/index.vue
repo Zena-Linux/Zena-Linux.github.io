@@ -13,5 +13,13 @@
     <HomeGetStarted />
 
     <HomeIsolation />
+
+    <HomeGaming />
+
+    <HomeDownload />
+
+    <HomeSupport />
+
+    <HomeCredits />
   </div>
 </template>
