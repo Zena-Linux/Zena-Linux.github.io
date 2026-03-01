@@ -50,7 +50,7 @@ const handleCopy = async () => {
 }
 
 :slotted(code) {
-  @apply block w-max bg-transparent border-0 flex flex-col;
+  @apply w-max bg-transparent border-0 flex flex-col;
 }
 
 pre::before {
