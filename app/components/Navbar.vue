@@ -18,7 +18,13 @@
         </li>
       </ul>
     </div>
-    <div class="navbar-end">
+    <div class="navbar-end gap-2 px-2">
+      <a href="https://discord.gg/22MFgGgjG9" target="_blank" rel="noopener" class="btn btn-ghost btn-circle shadow-sm hover:scale-105 transition-transform">
+        <Icon name="ic:baseline-discord" class="text-2xl" />
+      </a>
+      <a href="https://github.com/Zena-Linux/" target="_blank" rel="noopener" class="btn btn-ghost btn-circle shadow-sm hover:scale-105 transition-transform">
+        <Icon name="mdi:github" class="text-2xl" />
+      </a>
     </div>
   </div>
 </template>
