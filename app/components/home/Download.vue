@@ -13,7 +13,7 @@
         Download the latest ISO below.
       </p>
 
-      <div class="flex flex-col md:flex-row justify-center gap-6 mb-12">
+      <div class="flex flex-col md:flex-row justify-center items-center gap-6 mb-12">
         <a href="https://gofile.io/d/NOybCa" class="btn btn-primary btn-lg btn-wide gap-3 shadow-lg hover:scale-105 transition-transform">
           <Icon name="lucide:download" />
           GoFile
@@ -25,7 +25,7 @@
       </div>
 
       <div class="rounded-2xl grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 shadow-xl bg-base-100 max-w-4xl mx-auto p-2">
-        <div class="stat place-items-center">
+        <div class="stat place-items-center border-r-0 sm:border-r">
           <div class="stat-figure text-primary">
             <Icon name="lucide:box" class="text-3xl" />
           </div>
