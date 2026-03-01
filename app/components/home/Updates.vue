@@ -56,7 +56,7 @@
             </ul>
           </div>
         </div>
-        <div class="bg-base-100/50 rounded-xl p-4 md:p-6 mb-6 md:mb-8 border border-base-300">
+        <div class="bg-base-100/50 rounded-xl p-4 md:p-6 mb-6 md:mb-8 shadow-inner border-b border-r border-primary/20">
           <div class="flex items-center gap-3 mb-3 md:mb-4">
             <Icon name="lucide:rocket" class="text-accent text-xl md:text-2xl" />
             <h3 class="text-xl md:text-2xl font-bold text-accent">

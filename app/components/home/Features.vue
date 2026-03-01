@@ -49,8 +49,8 @@
         </Card>
       </div>
 
-      <div class="mt-12 overflow-x-auto">
-        <table class="table table-zebra w-full">
+      <div class="mt-12 overflow-x-auto rounded-2xl bg-base-100 shadow-inner border-b border-r border-primary/20">
+        <table class="table w-full">
           <thead>
             <tr class="text-lg">
               <th class="bg-base-300">
