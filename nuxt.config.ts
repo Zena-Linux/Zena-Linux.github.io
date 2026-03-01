@@ -2,10 +2,14 @@
 import tailwindcss from "@tailwindcss/vite";
 
 export default defineNuxtConfig({
+  ssr: false,
   modules: ['@nuxt/content', '@nuxt/icon', '@nuxtjs/color-mode'],
   devtools: { enabled: true },
   compatibilityDate: '2024-04-03',
   css: ['~/assets/main.css'],
+  nitro: {
+    preset: 'github-pages'
+  },
   vite: {
     plugins: [
       tailwindcss() as any,
@@ -21,6 +25,7 @@ export default defineNuxtConfig({
     }
   },
   app: {
+    baseURL: '/',
     pageTransition: { name: 'page', mode: 'out-in', duration: 500 }
   }
 })

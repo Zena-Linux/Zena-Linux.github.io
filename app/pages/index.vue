@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col gap-12 w-full">
+  <div class="flex flex-col w-full">
     <HomeHero />
 
     <HomeIntro />
@@ -10,11 +10,11 @@
 
     <HomeUpdates />
 
-    <HomeGetStarted />
-
     <HomeIsolation />
 
     <HomeGaming />
+
+    <HomeGetStarted />
 
     <HomeDownload />
 

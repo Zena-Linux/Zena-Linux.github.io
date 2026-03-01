@@ -1,6 +1,6 @@
 <template>
   <div id="download"
-    class="p-8 md:p-12 bg-linear-to-r from-primary/20 to-secondary/20 rounded-3xl mb-12 border border-primary/20 shadow-2xl">
+    class="p-8 md:p-12 bg-linear-to-r from-primary/20 to-secondary/20 rounded-2xl mb-12 border border-primary/20 shadow-2xl">
     <div class="text-center">
       <h2 class="text-4xl font-bold mb-4">
         <Icon name="lucide:download" class="mr-2 align-middle" />

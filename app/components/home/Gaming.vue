@@ -1,6 +1,6 @@
 <template>
   <div id="gaming"
-    class="w-full bg-linear-to-r from-purple-900/20 to-pink-900/20 rounded-3xl shadow-2xl mb-12 p-8 md:p-12 border border-purple-500/20">
+    class="w-full bg-linear-to-r from-purple-900/20 to-pink-900/20 rounded-2xl shadow-2xl mb-12 p-8 md:p-12 border border-purple-500/20">
     <div class="flex flex-col">
       <h2 class="text-4xl font-bold mb-6">
         <Icon name="lucide:gamepad-2" class="text-purple-400 mr-3 align-middle" />
