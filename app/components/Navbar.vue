@@ -1,12 +1,12 @@
 <template>
   <div class="navbar bg-base-200 shrink-0">
-    <div class="navbar-start">
-      <NuxtLink to="/" class="px-2 hover:motion-preset-pulse-sm">
+    <div class="navbar-start px-2">
+      <NuxtLink to="/" class="hover:motion-preset-pulse-sm">
         <img src="/favicon.ico" alt="Zena Logo" class="w-8 h-8"/>
       </NuxtLink>
     </div>
     <div class="navbar-center">
-      <ul class="menu menu-horizontal px-1 gap-5">
+      <ul class="menu menu-horizontal gap-2 lg:gap-5">
         <li>
           <NuxtLink to="/">Home</NuxtLink>
         </li>
