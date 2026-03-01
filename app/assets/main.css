@@ -1,0 +1,16 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+@plugin "tailwindcss-motion";
+@plugin "daisyui" {
+  themes: aqua --default, dark --prefersdark, aqua;
+}
+
+.page-leave-to,
+.page-leave-active {
+  @apply motion-opacity-out-0 -motion-translate-y-out-100 motion-blur-out-sm motion-duration-500
+}
+
+.page-enter-from,
+.page-enter-active {
+  @apply motion-opacity-in-0 motion-translate-y-in-100 motion-blur-in-sm motion-duration-500
+}

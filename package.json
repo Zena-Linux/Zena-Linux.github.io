@@ -1,33 +1,25 @@
 {
-  "name": "zerixal.github.io",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "npm run dev:11ty & npm run dev:css",
-    "dev:11ty": "eleventy --serve --quiet",
-    "dev:css": "tailwindcss -i src/css/styles.css -o public/css/styles.css --watch",
-    "build": "eleventy && tailwindcss -i src/css/styles.css -o public/css/styles.css"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Zerixal/Zerixal.github.io.git"
-  },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "name": "Zena-Linux-github-io",
+  "private": true,
   "type": "module",
-  "bugs": {
-    "url": "https://github.com/Zerixal/Zerixal.github.io/issues"
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview"
   },
-  "homepage": "https://github.com/Zerixal/Zerixal.github.io#readme",
   "dependencies": {
-    "@11ty/eleventy": "^3.1.2",
-    "@tailwindcss/cli": "^4.1.18",
-    "tailwindcss": "^4.1.18"
+    "@nuxt/content": "^3.12.0",
+    "@nuxt/icon": "^2.2.1",
+    "@nuxtjs/color-mode": "^4.0.0",
+    "@tailwindcss/vite": "^4.2.1",
+    "better-sqlite3": "^12.6.2",
+    "nuxt": "^4.3.1",
+    "tailwindcss": "^4.2.1"
   },
   "devDependencies": {
-    "@11ty/eleventy-img": "^6.0.4",
-    "daisyui": "^5.5.14"
+    "@tailwindcss/typography": "^0.5.19",
+    "daisyui": "^5.5.19",
+    "tailwindcss-motion": "^1.1.1"
   }
 }
