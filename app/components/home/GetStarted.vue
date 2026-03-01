@@ -1,6 +1,6 @@
 <template>
   <CardLarge>
-    <div class="text-center">
+    <div class="text-center pb-8">
       <h2 class="text-4xl font-bold">
         <Icon name="lucide:rocket" class="text-primary mr-2 align-middle" />
         Get Started in Minutes

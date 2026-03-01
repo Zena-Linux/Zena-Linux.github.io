@@ -31,8 +31,7 @@
     </div>
 
     <div class="bg-base-200/50 rounded-2xl p-8 mb-12 border border-base-300">
-      <h3 class="text-xl font-bold mb-6 flex items-center justify-center gap-2">
-        <Icon name="lucide:layers" class="text-accent" />
+      <h3 class="text-xl font-bold mb-6">
         Standing on the Shoulders of Giants
       </h3>
       <div class="flex flex-wrap justify-center gap-x-8 gap-y-4 text-sm font-medium text-base-content/60">
