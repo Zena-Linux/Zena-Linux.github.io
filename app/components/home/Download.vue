@@ -13,12 +13,12 @@
       </p>
 
       <div class="flex flex-col md:flex-row justify-center items-center gap-6 mb-12">
-        <a href="https://gofile.io/d/NOybCa"
+        <a href="https://gofile.io/d/rpH3ZE"
           class="btn btn-primary btn-lg btn-wide gap-3 shadow-lg hover:scale-105 transition-transform">
           <Icon name="lucide:download" />
           GoFile
         </a>
-        <a href="https://send.now/a/1CSI"
+        <a href="https://send.now/a/1ELU"
           class="btn btn-secondary btn-lg btn-wide gap-3 shadow-lg hover:scale-105 transition-transform">
           <Icon name="lucide:download" />
           Send.now
