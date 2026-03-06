@@ -2,7 +2,7 @@
 @plugin "@tailwindcss/typography";
 @plugin "tailwindcss-motion";
 @plugin "daisyui" {
-  themes: aqua --default, dark --prefersdark, aqua;
+  themes: aqua --default, aqua --prefersdark;
 }
 
 .page-leave-to,
