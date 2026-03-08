@@ -3,7 +3,7 @@ title: Podman & Distrobox
 order: 11
 ---
 
-# Podman, Distrobox and homectl Notes
+# Podman and Distrobox 
 
 This section covers how to configure and use Podman and Distrobox on Zena for container-based development workflows.
 

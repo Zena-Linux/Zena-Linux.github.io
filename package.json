@@ -8,6 +8,9 @@
     "generate": "nuxt generate",
     "preview": "nuxt preview"
   },
+  "overrides": {
+    "serialize-javascript": ">=7.0.4"
+  },
   "dependencies": {
     "@nuxt/content": "^3.12.0",
     "@nuxt/icon": "^2.2.1",
