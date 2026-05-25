@@ -1,3 +1,25 @@
+<script setup lang="ts">
+interface ReleaseInfo {
+  image: string;
+  download_url: string;
+}
+
+interface Releases {
+  default: ReleaseInfo;
+  nvidia: ReleaseInfo;
+}
+
+const { data: decodedReleases } = useFetch<Releases>('https://raw.githubusercontent.com/Zena-Linux/Zena/metadata/releases.json', {
+  key: 'releases-data',
+  transform: (data: any) => {
+    if (typeof data === 'string') {
+      return JSON.parse(data)
+    }
+    return data
+  }
+})
+</script>
+
 <template>
   <CardLarge>
     <div class="text-center">
@@ -12,17 +34,30 @@
         Download the latest ISO below.
       </p>
 
-      <div class="flex flex-col md:flex-row justify-center items-center gap-6 mb-12">
-        <a href="https://gofile.io/d/EhACDq"
-          class="btn btn-primary btn-lg btn-wide gap-3 shadow-lg hover:scale-105 transition-transform">
-          <Icon name="lucide:download" />
-          GoFile
-        </a>
-        <a href="https://send.now/a/1F7W"
-          class="btn btn-secondary btn-lg btn-wide gap-3 shadow-lg hover:scale-105 transition-transform">
-          <Icon name="lucide:download" />
-          Send.now
-        </a>
+      <div class="flex flex-col md:flex-row justify-center items-center gap-6 mb-12 min-h-[64px]">
+        <template v-if="decodedReleases?.default && decodedReleases?.nvidia">
+          <a :href="decodedReleases.default.download_url"
+            class="btn btn-primary btn-lg btn-wide gap-3 shadow-lg hover:scale-105 transition-transform"
+            target="_blank" rel="noopener noreferrer">
+            <Icon name="lucide:download" />
+            Zena
+          </a>
+          <a :href="decodedReleases.nvidia.download_url"
+            class="btn btn-secondary btn-lg btn-wide gap-3 shadow-lg hover:scale-105 transition-transform"
+            target="_blank" rel="noopener noreferrer">
+            <Icon name="simple-icons:nvidia" />
+            Zena-Nvidia
+          </a>
+        </template>
+        <template v-else-if="!decodedReleases">
+          <span class="loading loading-dots loading-lg text-primary"></span>
+        </template>
+        <template v-else>
+          <div class="text-error flex items-center gap-2 font-medium">
+            <Icon name="lucide:alert-circle" />
+            Download links temporarily unavailable.
+          </div>
+        </template>
       </div>
 
       <div
