@@ -30,6 +30,25 @@
       </div>
     </div>
 
+    <div
+      class="flex flex-col md:flex-row items-center justify-center gap-8 p-8 bg-base-200/50 rounded-2xl border border-base-300 mb-12 group hover:border-primary/30 transition-all duration-300">
+      <a href="https://openinventionnetwork.com/" target="_blank" rel="noopener noreferrer"
+        class="shrink-0 transition-transform group-hover:scale-105">
+        <img src="/images/oin-member.png" alt="OIN Member Badge" class="h-24 md:h-28" />
+      </a>
+      <div class="text-left">
+        <h3 class="text-xl font-bold mb-3 flex items-center gap-2 text-primary">
+          <Icon name="lucide:shield-check" />
+          Open Invention Network Member
+        </h3>
+        <p class="text-base-content/70 leading-relaxed max-w-lg">
+          Zena is a proud member of the <strong>Open Invention Network</strong>, the largest patent non-aggression
+          community in history. We are committed to patent non-aggression in the Linux System and supporting the
+          freedom of open source software.
+        </p>
+      </div>
+    </div>
+
     <div class="bg-base-200/50 rounded-2xl p-8 mb-12 border border-base-300">
       <h3 class="text-xl font-bold mb-6">
         Standing on the Shoulders of Giants
